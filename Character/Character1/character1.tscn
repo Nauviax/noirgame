@@ -1,13 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3fs2twxsd82y"]
+[gd_scene load_steps=5 format=3 uid="uid://dglf20iwoa2m6"]
 
-[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://Character/base_character.tscn" id="1_qpy2u"]
-[ext_resource type="Texture2D" uid="uid://bn60xm1vcn2pl" path="res://Assets/Sprites/Temp/police.png" id="2_vvqva"]
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://Character/base_character.tscn" id="1_ktdp1"]
+[ext_resource type="Texture2D" uid="uid://bn60xm1vcn2pl" path="res://Assets/Sprites/Temp/police.png" id="2_hcdec"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_vvqva")
+"texture": ExtResource("2_hcdec")
 }],
 "loop": true,
 "name": &"default",
@@ -17,7 +17,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
 size = Vector2(266, 284)
 
-[node name="PoliceCharacter" instance=ExtResource("1_qpy2u")]
+[node name="Character1" instance=ExtResource("1_ktdp1")]
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.999985, -1.00002)
@@ -41,8 +41,7 @@ offset_left = -119.0
 offset_top = -346.0
 offset_right = 108.0
 offset_bottom = -312.0
-text = "I am a police officer
-"
+text = "I am talking"
 
 [node name="ThoughtBubble" parent="." index="2"]
 offset_left = -23.0

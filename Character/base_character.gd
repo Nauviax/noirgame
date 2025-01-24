@@ -18,8 +18,9 @@ func _on_click_area_input_event(viewport: Node, event: InputEvent, shape_idx: in
 
 
 func _on_click_area_mouse_exited() -> void:
-	speech_bubble.visible = false
-	thought_bubble_timer.start()
+	if (speech_bubble.visible):
+		speech_bubble.visible = false
+		thought_bubble_timer.start()
 
 
 func _on_thought_bubble_timer_timeout() -> void:
