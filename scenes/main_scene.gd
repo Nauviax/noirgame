@@ -27,6 +27,7 @@ func _ready():
 		var button: LocationButton = location_button.instantiate()
 		button.location_to_load = location
 		button.texture_normal = location.location_icon
+		button.texture_focused = location.location_icon_selected
 		location_selector.add_child(button)
 
 ## Load a new location, unloading the current one.
