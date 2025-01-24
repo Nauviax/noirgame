@@ -18,9 +18,9 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+[node name="Label" type="Label" parent="Control"]
 visible = false
 layout_mode = 0
 offset_right = 40.0
-offset_bottom = 40.0
-text = "Testing"
+offset_bottom = 23.0
+text = "This is label"

@@ -1,6 +1,6 @@
 extends Control
 
-@onready var speech_text = $RichTextLabel
+@onready var speech_text = $Label
 @onready var bubble_icon = $TextureRect
 
 func _ready():
