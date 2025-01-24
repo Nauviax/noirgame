@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6fkriswprgov"
-path="res://.godot/imported/copSketch.png-378c5425cc16898f347b4f9d99fb4b41.ctex"
+path="res://.godot/imported/copSketch.png-2bbae64889455b14360380c679cd4389.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Character/copSketch.png"
-dest_files=["res://.godot/imported/copSketch.png-378c5425cc16898f347b4f9d99fb4b41.ctex"]
+source_file="res://Assets/Sprites/Character/copSketch.png"
+dest_files=["res://.godot/imported/copSketch.png-2bbae64889455b14360380c679cd4389.ctex"]
 
 [params]
 

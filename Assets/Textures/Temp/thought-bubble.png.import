@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt4rbo1ecejil"
-path="res://.godot/imported/thought-bubble.png-af1baa41a2af64dd52ac57990406bdaa.ctex"
+path="res://.godot/imported/thought-bubble.png-827877986c1b128af6666db891896dcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/Temp/thought-bubble.png"
-dest_files=["res://.godot/imported/thought-bubble.png-af1baa41a2af64dd52ac57990406bdaa.ctex"]
+source_file="res://Assets/Textures/Temp/thought-bubble.png"
+dest_files=["res://.godot/imported/thought-bubble.png-827877986c1b128af6666db891896dcb.ctex"]
 
 [params]
 
