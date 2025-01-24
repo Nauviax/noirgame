@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://casoypfdm7e3l"]
+
+[ext_resource type="Script" path="res://Character/control.gd" id="1_mjpqb"]
+
+[node name="BaseCharacter" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_mjpqb")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+text = "Testing"
