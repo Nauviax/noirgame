@@ -1,26 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://casoypfdm7e3l"]
+[gd_scene load_steps=3 format=3 uid="uid://casoypfdm7e3l"]
 
-[ext_resource type="Script" path="res://Character/control.gd" id="1_mjpqb"]
+[ext_resource type="Script" path="res://Character/base_character.gd" id="1_no52m"]
+[ext_resource type="Texture2D" uid="uid://g23fwqk88i80" path="res://Assets/Textures/Temp/speech-bubble.png" id="2_6pv1x"]
 
 [node name="BaseCharacter" type="Node2D"]
+script = ExtResource("1_no52m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 
-[node name="Control" type="Control" parent="."]
+[node name="SpeechBubble" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_mjpqb")
 
-[node name="TextureRect" type="TextureRect" parent="Control"]
+[node name="TextureRect" type="TextureRect" parent="SpeechBubble"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -194.0
+offset_top = -590.0
+offset_right = 166.0
+offset_bottom = -230.0
+texture = ExtResource("2_6pv1x")
 
-[node name="Label" type="Label" parent="Control"]
-visible = false
+[node name="Label" type="Label" parent="SpeechBubble"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -72.0
+offset_top = -445.0
+offset_right = 62.0
+offset_bottom = -411.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
 text = "This is label"
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
+[connection signal="mouse_exited" from="ClickArea" to="." method="_on_click_area_mouse_exited"]

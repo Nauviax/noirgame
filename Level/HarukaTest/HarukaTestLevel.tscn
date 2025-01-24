@@ -5,4 +5,4 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="PoliceCharacter" parent="." instance=ExtResource("1_qvmox")]
-position = Vector2(566, 474)
+position = Vector2(562, 458)
