@@ -1,17 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://ciqo7jrq2itxu"]
+[gd_scene load_steps=7 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
 [ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/inside_location.tscn" id="2_w55ox"]
 [ext_resource type="PackedScene" uid="uid://c34eynjqtbvev" path="res://scenes/locations/outside_location.tscn" id="3_al1ud"]
 [ext_resource type="PackedScene" uid="uid://bei0eo100huqm" path="res://ui/location_selector/location_button.tscn" id="4_kf4gn"]
+[ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://ui/ui_sprites/BasicToolbar.png" id="5_b7xis"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riku2"]
 
 [node name="MainScene" type="Node2D" node_paths=PackedStringArray("location_selector")]
 script = ExtResource("1_41gje")
-locations = Array[PackedScene]([ExtResource("2_w55ox"), ExtResource("3_al1ud")])
+locations_unloaded = Array[PackedScene]([ExtResource("2_w55ox"), ExtResource("3_al1ud")])
 location_button = ExtResource("4_kf4gn")
-location_selector = NodePath("UI/LevelSelect")
+location_selector = NodePath("UI/LevelSelectToolbar/LevelSelect")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -23,7 +24,19 @@ offset_right = 40.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_riku2")
 
-[node name="LevelSelect" type="HBoxContainer" parent="UI"]
+[node name="LevelSelectToolbar" type="CenterContainer" parent="UI"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+
+[node name="Background" type="TextureRect" parent="UI/LevelSelectToolbar"]
+layout_mode = 2
+texture = ExtResource("5_b7xis")
+
+[node name="LevelSelect" type="HBoxContainer" parent="UI/LevelSelectToolbar"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@21113" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@21113" method="_on_pressed"]
