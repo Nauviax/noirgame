@@ -19,7 +19,7 @@ anchor_mode = 0
 
 [node name="UI" type="PanelContainer" parent="."]
 z_index = 99
-custom_minimum_size = Vector2(1152, 648)
+custom_minimum_size = Vector2(1920, 1080)
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 1
@@ -40,4 +40,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@79238" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@79238" method="_on_pressed"]

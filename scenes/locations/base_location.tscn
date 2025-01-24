@@ -5,7 +5,6 @@
 
 [node name="BaseLocation" type="Node2D"]
 script = ExtResource("1_xr1op")
-location_name = null
 location_icon = ExtResource("2_w6did")
 location_icon_selected = ExtResource("2_w6did")
 

@@ -9,8 +9,8 @@ location_name = "Inside"
 location_icon = ExtResource("2_43n25")
 
 [node name="Background" parent="." index="0"]
-position = Vector2(574.5, 322)
-scale = Vector2(8.97656, 5.03125)
+position = Vector2(958, 536)
+scale = Vector2(14.9687, 8.375)
 texture = ExtResource("2_rxwbp")
 flip_v = true
 
