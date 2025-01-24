@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7witf3tlm7tb"]
+[gd_scene load_steps=6 format=3 uid="uid://c7witf3tlm7tb"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_oshgo"]
 [ext_resource type="Texture2D" uid="uid://bycmduqjdjy14" path="res://randomplaceholders/Thing1.png" id="2_8owp1"]
 [ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="2_wkhv7"]
 [ext_resource type="PackedScene" uid="uid://dglf20iwoa2m6" path="res://Character/Character1/character1.tscn" id="4_ol0hn"]
+[ext_resource type="PackedScene" uid="uid://byb1isfrym7sm" path="res://scenes/police_officer/police_officer_container.tscn" id="5_oujxf"]
 
 [node name="BaseLocation" instance=ExtResource("1_oshgo")]
 location_name = "Inside"
@@ -20,3 +21,5 @@ texture = ExtResource("2_8owp1")
 
 [node name="Character1" parent="." index="2" instance=ExtResource("4_ol0hn")]
 position = Vector2(768, 410)
+
+[node name="PoliceOfficerContainer" parent="." index="3" instance=ExtResource("5_oujxf")]

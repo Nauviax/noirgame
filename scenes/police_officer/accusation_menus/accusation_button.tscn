@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbop3w0eb2d1m"]
+
+[ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="1_ndtuc"]
+[ext_resource type="Script" path="res://scenes/police_officer/accusation_menus/accusation_button.gd" id="2_v2wwx"]
+
+[node name="AccusationButton" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1016.0
+offset_bottom = -466.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CulpritName"
+icon = ExtResource("1_ndtuc")
+icon_alignment = 1
+vertical_icon_alignment = 0
+script = ExtResource("2_v2wwx")
