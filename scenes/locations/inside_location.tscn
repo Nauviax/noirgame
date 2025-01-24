@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7witf3tlm7tb"]
+[gd_scene load_steps=5 format=3 uid="uid://c7witf3tlm7tb"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_oshgo"]
 [ext_resource type="Texture2D" uid="uid://bycmduqjdjy14" path="res://randomplaceholders/Thing1.png" id="2_8owp1"]
 [ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="2_wkhv7"]
+[ext_resource type="PackedScene" uid="uid://dglf20iwoa2m6" path="res://character/Character1/character1.tscn" id="4_ol0hn"]
 
 [node name="BaseLocation" instance=ExtResource("1_oshgo")]
 location_name = "Inside"
@@ -16,3 +17,6 @@ texture = ExtResource("2_wkhv7")
 [node name="Thing1" type="Sprite2D" parent="." index="1"]
 position = Vector2(359, 286)
 texture = ExtResource("2_8owp1")
+
+[node name="Character1" parent="." index="2" instance=ExtResource("4_ol0hn")]
+position = Vector2(768, 410)

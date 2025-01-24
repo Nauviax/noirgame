@@ -22,6 +22,7 @@ z_index = 99
 custom_minimum_size = Vector2(1152, 648)
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxEmpty_riku2")
 
 [node name="LevelSelectToolbar" type="CenterContainer" parent="UI"]
@@ -39,4 +40,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@21113" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@21113" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" method="_on_pressed"]

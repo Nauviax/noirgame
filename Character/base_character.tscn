@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://casoypfdm7e3l"]
+
+[ext_resource type="Script" path="res://character/base_character.gd" id="1_no52m"]
+[ext_resource type="Texture2D" uid="uid://g23fwqk88i80" path="res://assets/textures/Temp/speech-bubble.png" id="2_kujgu"]
+[ext_resource type="Texture2D" uid="uid://dt4rbo1ecejil" path="res://assets/textures/Temp/thought-bubble.png" id="3_b73cg"]
+
+[node name="BaseCharacter" type="Node2D"]
+script = ExtResource("1_no52m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="SpeechBubble" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 272.0
+offset_top = 31.0
+offset_right = 312.0
+offset_bottom = 71.0
+
+[node name="TextureRect" type="TextureRect" parent="SpeechBubble"]
+layout_mode = 0
+offset_left = -438.0
+offset_top = -593.0
+offset_right = -78.0
+offset_bottom = -233.0
+texture = ExtResource("2_kujgu")
+
+[node name="Label" type="Label" parent="SpeechBubble"]
+layout_mode = 0
+offset_left = -316.0
+offset_top = -448.0
+offset_right = -182.0
+offset_bottom = -414.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "This is label"
+
+[node name="ThoughtBubble" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -184.0
+offset_top = 7.0
+offset_right = -144.0
+offset_bottom = 47.0
+
+[node name="TextureRect" type="TextureRect" parent="ThoughtBubble"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = -566.0
+offset_right = 375.0
+offset_bottom = -244.0
+texture = ExtResource("3_b73cg")
+
+[node name="Label" type="Label" parent="ThoughtBubble"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -494.0
+offset_right = 342.0
+offset_bottom = -413.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "This is a thought bubble"
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+
+[node name="ThoughtBubbleTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
+[connection signal="mouse_exited" from="ClickArea" to="." method="_on_click_area_mouse_exited"]
+[connection signal="timeout" from="ThoughtBubbleTimer" to="." method="_on_thought_bubble_timer_timeout"]
