@@ -68,6 +68,7 @@ text = "This is a thought bubble"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
 
 [node name="ThoughtBubbleTimer" type="Timer" parent="."]
+wait_time = 5.0
 autostart = true
 
 [connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
