@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8wkgw6ouub4v"]
-
-[ext_resource type="PackedScene" uid="uid://c3fs2twxsd82y" path="res://Character/Character1/police_character.tscn" id="1_qvmox"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="PoliceCharacter" parent="." instance=ExtResource("1_qvmox")]
-position = Vector2(562, 458)

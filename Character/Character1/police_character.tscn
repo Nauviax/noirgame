@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3fs2twxsd82y"]
 
-[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://Character/base_character.tscn" id="1_qpy2u"]
-[ext_resource type="Texture2D" uid="uid://bn60xm1vcn2pl" path="res://Assets/Sprites/Temp/police.png" id="2_vvqva"]
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_qpy2u"]
+[ext_resource type="Texture2D" uid="uid://bn60xm1vcn2pl" path="res://assets/sprites/Temp/police.png" id="2_vvqva"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
