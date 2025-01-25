@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bemerg043xod0"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_ais4h"]
-[ext_resource type="Texture2D" uid="uid://d71qn1pyta47" path="res://assets/sprites/Character/cory.png" id="2_kr06i"]
+[ext_resource type="Texture2D" uid="uid://d71qn1pyta47" path="res://assets/sprites/character/cory.png" id="2_kr06i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2jv7c"]
 animations = [{

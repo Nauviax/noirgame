@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjhna6ghccfmf"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_f82w1"]
-[ext_resource type="Texture2D" uid="uid://dunbikeai5vfp" path="res://assets/sprites/Character/gordon.png" id="2_it20u"]
+[ext_resource type="Texture2D" uid="uid://dunbikeai5vfp" path="res://assets/sprites/character/gordon.png" id="2_it20u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wlvft"]
 animations = [{
