@@ -103,6 +103,8 @@ _data = {
 
 [node name="BaseCharacter" type="Node2D"]
 script = ExtResource("1_no52m")
+thought_dialog1 = null
+thought_dialog2 = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 
@@ -166,7 +168,6 @@ offset_right = 342.0
 offset_bottom = -413.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
-text = "This is a thought bubble"
 
 [node name="ClickArea" type="Area2D" parent="."]
 
