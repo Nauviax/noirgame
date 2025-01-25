@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://c34eynjqtbvev"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_gxxq4"]
-[ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/thing2.png" id="2_43n25"]
-[ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assets/sprites/backgrounds/boilerroom.png" id="3_soxlh"]
+[ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/Thing2.png" id="2_43n25"]
+[ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assetstemp/spritestemp/backgrounds/boilerroom.png" id="3_soxlh"]
 
 [node name="BaseLocation" instance=ExtResource("1_gxxq4")]
 location_name = "Boiler Room"

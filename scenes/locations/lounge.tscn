@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bbr170fe47pa"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_hx0jh"]
-[ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/thing2.png" id="2_m7feb"]
-[ext_resource type="Texture2D" uid="uid://dtv0b1veua863" path="res://assets/sprites/backgrounds/lounge.png" id="3_sj7fj"]
+[ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/Thing2.png" id="2_m7feb"]
+[ext_resource type="Texture2D" uid="uid://dtv0b1veua863" path="res://assetstemp/spritestemp/backgrounds/lounge.png" id="3_sj7fj"]
 
 [node name="BaseLocation" instance=ExtResource("1_hx0jh")]
 location_name = "Lounge"

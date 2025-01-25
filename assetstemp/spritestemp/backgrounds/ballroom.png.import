@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bycmduqjdjy14"
-path="res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"
+uid="uid://24njhqsukt84"
+path="res://.godot/imported/ballroom.png-9f8d4171d6c6e3c95f01827dba8797c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://randomplaceholders/Thing1.png"
-dest_files=["res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"]
+source_file="res://assetstemp/spritestemp/backgrounds/ballroom.png"
+dest_files=["res://.godot/imported/ballroom.png-9f8d4171d6c6e3c95f01827dba8797c4.ctex"]
 
 [params]
 

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://daddowoivp8ac"]
+
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://charactertemp/base_character.tscn" id="1_nifmo"]
+[ext_resource type="Texture2D" uid="uid://fegmt02eomc7" path="res://assetstemp/spritestemp/charactertemp/barbra.png" id="2_4ho87"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kr6wo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4ho87")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kwgd"]
+size = Vector2(170, 284)
+
+[node name="Barbra" instance=ExtResource("1_nifmo")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_kr6wo")
+
+[node name="Label" parent="SpeechBubble" index="1"]
+text = "Barbra talking"
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "Barbra thinking"
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+shape = SubResource("RectangleShape2D_3kwgd")
+
+[node name="Label" parent="NamePanel" index="1"]
+text = "Barbra"

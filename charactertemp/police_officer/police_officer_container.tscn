@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://byb1isfrym7sm"]
+
+[ext_resource type="PackedScene" uid="uid://5v7o53hnhl1g" path="res://charactertemp/police_officer/accusation_menus/accusation_menu.tscn" id="1_fw6p8"]
+[ext_resource type="PackedScene" uid="uid://vwmvgp2pq2sf" path="res://charactertemp/police_officer/police_officer.tscn" id="1_ugf2o"]
+[ext_resource type="PackedScene" uid="uid://brbv80t381ian" path="res://charactertemp/police_officer/accusation_menus/final_verdict.tscn" id="3_dwasg"]
+
+[node name="PoliceOfficerContainer" type="Node2D"]
+
+[node name="PoliceOfficer" parent="." node_paths=PackedStringArray("_accusation_culprit_menu", "_accusation_weapon_menu", "_accusation_location_menu", "_final_verdict_ui") instance=ExtResource("1_ugf2o")]
+position = Vector2(951, 372)
+_accusation_culprit_menu = NodePath("../CulpritAccusationMenu")
+_accusation_weapon_menu = NodePath("../WeaponAccusationMenu")
+_accusation_location_menu = NodePath("../LocationAccusationMenu")
+_final_verdict_ui = NodePath("../FinalVerdict")
+
+[node name="CulpritAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
+visible = false
+option1 = "Anna"
+option2 = "Bob"
+option3 = "Sebastian"
+
+[node name="WeaponAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
+visible = false
+option1 = "Knife"
+option2 = "Gun"
+option3 = "Bubble Blower"
+
+[node name="LocationAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
+visible = false
+option1 = "Lounge"
+option2 = "Garden"
+option3 = "Boiler Room"
+
+[node name="FinalVerdict" parent="." instance=ExtResource("3_dwasg")]
+visible = false
+offset_left = 790.0
+offset_top = 168.0
+offset_right = 790.0
+offset_bottom = 168.0
+
+[connection signal="option_selected" from="CulpritAccusationMenu" to="PoliceOfficer" method="_on_accusation_culprit_selected"]
+[connection signal="option_selected" from="WeaponAccusationMenu" to="PoliceOfficer" method="_on_accusation_weapon_selected"]
+[connection signal="option_selected" from="LocationAccusationMenu" to="PoliceOfficer" method="_on_accusation_location_selected"]

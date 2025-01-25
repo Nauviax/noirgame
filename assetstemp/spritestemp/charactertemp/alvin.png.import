@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bycmduqjdjy14"
-path="res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"
+uid="uid://buinpwwviqd1j"
+path="res://.godot/imported/alvin.png-371e7b6e597e72222c190bf604e4e21f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://randomplaceholders/Thing1.png"
-dest_files=["res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"]
+source_file="res://assetstemp/spritestemp/charactertemp/alvin.png"
+dest_files=["res://.godot/imported/alvin.png-371e7b6e597e72222c190bf604e4e21f.ctex"]
 
 [params]
 

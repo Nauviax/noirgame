@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bycmduqjdjy14"
-path="res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"
+uid="uid://b6skgu8rcnkdu"
+path="res://.godot/imported/alison.png-fb7bf2066371588fcbd563571254dfed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://randomplaceholders/Thing1.png"
-dest_files=["res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"]
+source_file="res://assetstemp/spritestemp/charactertemp/alison.png"
+dest_files=["res://.godot/imported/alison.png-fb7bf2066371588fcbd563571254dfed.ctex"]
 
 [params]
 

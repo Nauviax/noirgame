@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://dglf20iwoa2m6"]
+
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://charactertemp/base_character.tscn" id="1_wfkkv"]
+[ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assetstemp/spritestemp/charactertemp/alison.png" id="2_3tecy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3tecy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
+size = Vector2(170, 284)
+
+[node name="Alison" instance=ExtResource("1_wfkkv")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.999985, -1.00002)
+sprite_frames = SubResource("SpriteFrames_pl3jf")
+
+[node name="SpeechBubble" parent="." index="1"]
+offset_left = -9.0
+offset_top = 8.0
+offset_right = 31.0
+offset_bottom = 48.0
+
+[node name="TextureRect" parent="SpeechBubble" index="0"]
+offset_left = -186.0
+offset_top = -483.0
+offset_right = 174.0
+offset_bottom = -123.0
+
+[node name="Label" parent="SpeechBubble" index="1"]
+offset_left = -119.0
+offset_top = -346.0
+offset_right = 108.0
+offset_bottom = -312.0
+text = "I am talking"
+
+[node name="ThoughtBubble" parent="." index="2"]
+offset_left = -23.0
+offset_top = 11.0
+offset_right = 17.0
+offset_bottom = 51.0
+
+[node name="TextureRect" parent="ThoughtBubble" index="0"]
+offset_left = -157.0
+offset_top = -471.0
+offset_right = 203.0
+offset_bottom = -149.0
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+offset_left = -108.0
+offset_top = -399.0
+offset_right = 170.0
+offset_bottom = -318.0
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_2k2wy")
+
+[node name="TextureRect" parent="NamePanel" index="0"]
+offset_left = 91.0
+offset_top = -130.0
+offset_right = 451.0
+offset_bottom = 230.0
+scale = Vector2(0.33, 0.33)
+
+[node name="Label" parent="NamePanel" index="1"]
+offset_left = 124.0
+offset_top = -85.0
+offset_right = 172.0
+offset_bottom = -62.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Alison"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bycmduqjdjy14"
-path="res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"
+uid="uid://66w4x3huo6bw"
+path="res://.godot/imported/boilerroom.png-173d593bba003dc2a6d0ed69af3303fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://randomplaceholders/Thing1.png"
-dest_files=["res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"]
+source_file="res://assetstemp/spritestemp/backgrounds/boilerroom.png"
+dest_files=["res://.godot/imported/boilerroom.png-173d593bba003dc2a6d0ed69af3303fb.ctex"]
 
 [params]
 

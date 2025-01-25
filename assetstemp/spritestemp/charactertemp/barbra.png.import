@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bycmduqjdjy14"
-path="res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"
+uid="uid://fegmt02eomc7"
+path="res://.godot/imported/barbra.png-a82b95b2c23f077d5b7d53c113cff211.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://randomplaceholders/Thing1.png"
-dest_files=["res://.godot/imported/Thing1.png-0adbc686a5c7bb53b1a41c44873ea585.ctex"]
+source_file="res://assetstemp/spritestemp/charactertemp/barbra.png"
+dest_files=["res://.godot/imported/barbra.png-a82b95b2c23f077d5b7d53c113cff211.ctex"]
 
 [params]
 
