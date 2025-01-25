@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://d30iq8mn4iy6w"]
+
+[ext_resource type="Texture2D" uid="uid://bvlej2t4bsdwy" path="res://assets/sprites/bubble/thought bubble.png" id="1_vo7ng"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5m8ij"]
+atlas = ExtResource("1_vo7ng")
+region = Rect2(717.488, 1.585, 80.5255, 89.177)
+
+[node name="BaseWeapon" type="Node2D"]
+
+[node name="WeaponSprite" type="Sprite2D" parent="."]
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+
+[node name="ThoughtBubble" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -40.0
+offset_top = -140.0
+offset_right = -40.0
+offset_bottom = -140.0
+
+[node name="TextureRect" type="TextureRect" parent="ThoughtBubble"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("AtlasTexture_5m8ij")
+
+[node name="Label" type="Label" parent="ThoughtBubble"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ProtagonistNameTag" type="TextureRect" parent="ThoughtBubble"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
