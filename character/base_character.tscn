@@ -166,7 +166,6 @@ offset_right = 342.0
 offset_bottom = -413.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
-text = "This is a thought bubble"
 
 [node name="ClickArea" type="Area2D" parent="."]
 

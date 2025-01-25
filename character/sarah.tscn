@@ -23,6 +23,7 @@ region = Rect2(85.5457, 0.483803, 116.762, 53.1469)
 size = Vector2(136, 284)
 
 [node name="Sarah" instance=ExtResource("1_s37f2")]
+thought_dialogs = Array[String](["Alison thinking 1", "Alison thinking 2"])
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ubf54")
