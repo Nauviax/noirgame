@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bm3c0ll6rem8i"]
+[gd_scene load_steps=7 format=3 uid="uid://bm3c0ll6rem8i"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_t2oms"]
 [ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="2_75wlj"]
+[ext_resource type="Texture2D" uid="uid://c8d6s5encxpw2" path="res://assets/sprites/character/nametag/alisonNameTag.png" id="3_5qlbw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
@@ -13,6 +14,10 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wptc"]
+atlas = ExtResource("3_5qlbw")
+region = Rect2(200.7, 2.22598, 127.552, 52.2611)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
 size = Vector2(170, 284)
@@ -28,53 +33,48 @@ offset_left = -9.0
 offset_top = 8.0
 offset_right = 31.0
 offset_bottom = 48.0
+scale = Vector2(0.7, 0.7)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -186.0
-offset_top = -483.0
-offset_right = 174.0
-offset_bottom = -123.0
+offset_left = -39.4286
+offset_top = -502.286
+offset_right = 320.571
+offset_bottom = -142.286
+scale = Vector2(0.74, 0.74)
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -119.0
-offset_top = -346.0
-offset_right = 108.0
-offset_bottom = -312.0
+offset_left = 24.5714
+offset_top = -426.286
+offset_right = 251.571
+offset_bottom = -392.286
 text = "I am talking"
+
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -41.4286
+offset_top = -534.286
+offset_right = 85.5714
+offset_bottom = -482.286
+texture = SubResource("AtlasTexture_1wptc")
 
 [node name="ThoughtBubble" parent="." index="2"]
 offset_left = -23.0
 offset_top = 11.0
 offset_right = 17.0
 offset_bottom = 51.0
+scale = Vector2(0.69, 0.69)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -157.0
-offset_top = -471.0
-offset_right = 203.0
-offset_bottom = -149.0
+offset_left = -204.11
+offset_top = -572.603
+offset_right = 189.89
+offset_bottom = -225.603
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = -108.0
-offset_top = -399.0
-offset_right = 170.0
-offset_bottom = -318.0
+offset_left = -116.11
+offset_top = -470.603
+offset_right = 161.89
+offset_bottom = -423.603
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_2k2wy")
-
-[node name="TextureRect" parent="NamePanel" index="0"]
-offset_left = 91.0
-offset_top = -130.0
-offset_right = 451.0
-offset_bottom = 230.0
-scale = Vector2(0.33, 0.33)
-
-[node name="Label" parent="NamePanel" index="1"]
-offset_left = 124.0
-offset_top = -85.0
-offset_right = 172.0
-offset_bottom = -62.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Alison"

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://4jtunr04q51l"]
+[gd_scene load_steps=7 format=3 uid="uid://4jtunr04q51l"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_d62y4"]
 [ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/character/jeffory.png" id="2_ytbik"]
+[ext_resource type="Texture2D" uid="uid://e0kjdqow55ku" path="res://assets/sprites/character/nametag/jefforyNameTag.png" id="3_6tstn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fptk5"]
 animations = [{
@@ -14,6 +15,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdq2t"]
+atlas = ExtResource("3_6tstn")
+region = Rect2(58.4996, 245.75, 147, 49.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cthga"]
 size = Vector2(147, 359)
 
@@ -22,15 +27,45 @@ size = Vector2(147, 359)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_fptk5")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.9, 0.9)
+
+[node name="TextureRect" parent="SpeechBubble" index="0"]
+offset_left = -345.889
+offset_top = -475.556
+offset_right = -102.889
+offset_bottom = -245.556
+
 [node name="Label" parent="SpeechBubble" index="1"]
+offset_left = -301.889
+offset_top = -403.556
+offset_right = -139.889
+offset_bottom = -369.556
 text = "Jeffory talking"
 
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -378.889
+offset_top = -525.556
+offset_right = -215.889
+offset_bottom = -463.556
+texture = SubResource("AtlasTexture_mdq2t")
+
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.72, 0.72)
+
+[node name="TextureRect" parent="ThoughtBubble" index="0"]
+offset_left = 8.33334
+offset_top = -587.5
+offset_right = 368.333
+offset_bottom = -265.5
+
 [node name="Label" parent="ThoughtBubble" index="1"]
+offset_left = 108.333
+offset_top = -499.5
+offset_right = 386.333
+offset_bottom = -418.5
 text = "Jeffory thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_cthga")
-
-[node name="Label" parent="NamePanel" index="1"]
-text = "Jeffory"

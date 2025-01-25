@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://buq1qy3lmodyd"]
+[gd_scene load_steps=7 format=3 uid="uid://buq1qy3lmodyd"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_bjg4x"]
 [ext_resource type="Texture2D" uid="uid://cbk12t4o4brwl" path="res://assets/sprites/character/jermiah.png" id="2_0ocej"]
+[ext_resource type="Texture2D" uid="uid://n4gjj4axkw7j" path="res://assets/sprites/character/nametag/jerimiahNameTag.png" id="3_w0pgk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_blqtr"]
 animations = [{
@@ -14,6 +15,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bho6r"]
+atlas = ExtResource("3_w0pgk")
+region = Rect2(200.297, 246.339, 168.298, 53.9521)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3tdsg"]
 size = Vector2(117, 366)
 
@@ -22,15 +27,45 @@ size = Vector2(117, 366)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_blqtr")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.52, 0.52)
+
+[node name="TextureRect" parent="SpeechBubble" index="0"]
+offset_left = -604.846
+offset_top = -783.385
+offset_right = -244.846
+offset_bottom = -423.385
+
 [node name="Label" parent="SpeechBubble" index="1"]
+offset_left = -482.846
+offset_top = -638.385
+offset_right = -307.846
+offset_bottom = -604.385
 text = "Jermiah talking"
 
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -628.846
+offset_top = -840.385
+offset_right = -425.846
+offset_bottom = -761.385
+texture = SubResource("AtlasTexture_bho6r")
+
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.62, 0.62)
+
+[node name="TextureRect" parent="ThoughtBubble" index="0"]
+offset_left = 77.4193
+offset_top = -633.871
+offset_right = 437.419
+offset_bottom = -311.871
+
 [node name="Label" parent="ThoughtBubble" index="1"]
+offset_left = 164.707
+offset_top = -542.94
+offset_right = 442.707
+offset_bottom = -461.94
 text = "Jermiah thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_3tdsg")
-
-[node name="Label" parent="NamePanel" index="1"]
-text = "Jermiah"

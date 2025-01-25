@@ -30,4 +30,3 @@ func _process(delta: float) -> void:
 			modulate.a = 1
 			fade_in = false
 			location_title.show_text(location_name)
-
