@@ -31,23 +31,23 @@ sprite_frames = SubResource("SpriteFrames_ubf54")
 scale = Vector2(0.66, 0.66)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -463.879
-offset_top = -549.606
-offset_right = -199.879
-offset_bottom = -290.606
+offset_left = -509.333
+offset_top = -554.151
+offset_right = -245.333
+offset_bottom = -295.151
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -400.879
-offset_top = -461.606
-offset_right = -248.879
-offset_bottom = -427.606
+offset_left = -446.333
+offset_top = -466.151
+offset_right = -294.333
+offset_bottom = -432.151
 text = "Sarah talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -487.879
-offset_top = -610.606
-offset_right = -302.879
-offset_bottom = -533.606
+offset_left = -533.333
+offset_top = -615.151
+offset_right = -348.333
+offset_bottom = -538.151
 texture = SubResource("AtlasTexture_ntcac")
 
 [node name="ThoughtBubble" parent="." index="2"]
