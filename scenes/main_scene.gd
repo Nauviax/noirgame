@@ -32,8 +32,6 @@ var current_location: Location
 
 ## Onready, show start screen and populate the UI.
 func _ready() -> void:
-	start_screen.show()
-	location_selector.hide() # Prevent clicks on UI before game starts.
 	for location in locations_unloaded:
 		locations.push_back(location.instantiate())
 	for location in locations:
@@ -42,6 +40,11 @@ func _ready() -> void:
 		button.texture_normal = location.location_icon
 		button.texture_focused = location.location_icon_selected
 		location_selector.add_child(button)
+	if not Engine.is_editor_hint(): # Don't hide things in editor.
+		start_screen.show()
+		location_selector.hide() # Prevent clicks on UI before game starts.
+	else: # If in editor, show a random location instantly.
+		show_location(locations.pick_random())
 
 ## Start game function. On first call, show insructions. On second call, hide start screen and load first location.
 func start_game() -> void:
