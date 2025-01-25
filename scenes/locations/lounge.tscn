@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dtv0b1veua863" path="res://assets/sprites/backgrounds/lounge.png" id="3_sj7fj"]
 [ext_resource type="PackedScene" uid="uid://bemerg043xod0" path="res://character/cory.tscn" id="4_38pmx"]
 [ext_resource type="PackedScene" uid="uid://buq1qy3lmodyd" path="res://character/jermiah.tscn" id="5_kpxev"]
-[ext_resource type="PackedScene" path="res://character/alison.tscn" id="6_tg45v"]
+[ext_resource type="PackedScene" uid="uid://bm3c0ll6rem8i" path="res://character/alison.tscn" id="6_tg45v"]
 
 [node name="BaseLocation" instance=ExtResource("1_hx0jh")]
 location_name = "Lounge"
@@ -16,13 +16,13 @@ texture = ExtResource("3_sj7fj")
 [node name="Characters" type="Node2D" parent="." index="1"]
 
 [node name="Cory" parent="Characters" index="0" instance=ExtResource("4_38pmx")]
-position = Vector2(764, 597)
+position = Vector2(720, 578)
 scale = Vector2(1.3, 1.3)
 
 [node name="Jermiah" parent="Characters" index="1" instance=ExtResource("5_kpxev")]
-position = Vector2(1104, 717)
+position = Vector2(1081, 722)
 scale = Vector2(1.53, 1.53)
 
 [node name="Alison" parent="Characters" index="2" instance=ExtResource("6_tg45v")]
-position = Vector2(1382, 525)
+position = Vector2(1418, 525)
 scale = Vector2(1.1, 1.1)

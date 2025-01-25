@@ -28,26 +28,26 @@ size = Vector2(147, 359)
 sprite_frames = SubResource("SpriteFrames_fptk5")
 
 [node name="SpeechBubble" parent="." index="1"]
-scale = Vector2(0.9, 0.9)
+scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -345.889
-offset_top = -475.556
-offset_right = -102.889
-offset_bottom = -245.556
+offset_left = -392.676
+offset_top = -527.027
+offset_right = -149.676
+offset_bottom = -297.027
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -301.889
-offset_top = -403.556
-offset_right = -139.889
-offset_bottom = -369.556
+offset_left = -348.676
+offset_top = -455.027
+offset_right = -186.676
+offset_bottom = -421.027
 text = "Jeffory talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -378.889
-offset_top = -525.556
-offset_right = -215.889
-offset_bottom = -463.556
+offset_left = -425.676
+offset_top = -577.027
+offset_right = -262.676
+offset_bottom = -515.027
 texture = SubResource("AtlasTexture_mdq2t")
 
 [node name="ThoughtBubble" parent="." index="2"]

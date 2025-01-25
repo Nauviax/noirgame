@@ -24,13 +24,13 @@ position = Vector2(261, 736)
 scale = Vector2(1.55, 1.55)
 
 [node name="Alvin" parent="Characters" index="1" instance=ExtResource("6_d74n6")]
-position = Vector2(716, 526)
+position = Vector2(638, 524)
 scale = Vector2(1.28, 1.28)
 
 [node name="Susan" parent="Characters" index="2" instance=ExtResource("7_cpm5m")]
-position = Vector2(1098, 547)
+position = Vector2(1219, 547)
 scale = Vector2(1.32, 1.32)
 
 [node name="Lisa" parent="Characters" index="3" instance=ExtResource("8_jcqtm")]
-position = Vector2(1765, 458)
+position = Vector2(1681, 523)
 scale = Vector2(1.09, 1.09)
