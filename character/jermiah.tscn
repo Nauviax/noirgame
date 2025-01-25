@@ -28,26 +28,27 @@ size = Vector2(117, 366)
 sprite_frames = SubResource("SpriteFrames_blqtr")
 
 [node name="SpeechBubble" parent="." index="1"]
-scale = Vector2(0.66, 0.66)
+visible = true
+scale = Vector2(0.58, 0.58)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -456.303
-offset_top = -696.03
-offset_right = -96.303
-offset_bottom = -336.03
+offset_left = -470.828
+offset_top = -727.483
+offset_right = -110.828
+offset_bottom = -367.483
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -334.303
-offset_top = -551.03
-offset_right = -159.303
-offset_bottom = -517.03
+offset_left = -348.828
+offset_top = -582.483
+offset_right = -173.828
+offset_bottom = -548.483
 text = "Jermiah talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -480.303
-offset_top = -753.03
-offset_right = -277.303
-offset_bottom = -674.03
+offset_left = -494.828
+offset_top = -784.483
+offset_right = -291.828
+offset_bottom = -705.483
 texture = SubResource("AtlasTexture_bho6r")
 
 [node name="ThoughtBubble" parent="." index="2"]
