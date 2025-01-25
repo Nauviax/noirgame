@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7witf3tlm7tb"]
+[gd_scene load_steps=9 format=3 uid="uid://c7witf3tlm7tb"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_oshgo"]
 [ext_resource type="Texture2D" uid="uid://bycmduqjdjy14" path="res://randomplaceholders/Thing1.png" id="2_8owp1"]
 [ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="3_n6cbb"]
-[ext_resource type="PackedScene" uid="uid://dglf20iwoa2m6" path="res://character/character1.tscn" id="4_ol0hn"]
 [ext_resource type="PackedScene" uid="uid://byb1isfrym7sm" path="res://character/police_officer/police_officer_container.tscn" id="5_oujxf"]
+[ext_resource type="PackedScene" uid="uid://4jtunr04q51l" path="res://character/jeffory.tscn" id="5_sl33o"]
+[ext_resource type="PackedScene" uid="uid://cweq7wnrbj2un" path="res://character/alvin.tscn" id="6_d74n6"]
+[ext_resource type="PackedScene" uid="uid://tf5ng5t1bhtu" path="res://character/susan.tscn" id="7_cpm5m"]
+[ext_resource type="PackedScene" uid="uid://du7f63kl1of7d" path="res://character/lisa.tscn" id="8_jcqtm"]
 
 [node name="BaseLocation2" instance=ExtResource("1_oshgo")]
 location_name = "Ballroom"
@@ -18,7 +21,22 @@ texture = ExtResource("3_n6cbb")
 position = Vector2(359, 286)
 texture = ExtResource("2_8owp1")
 
-[node name="Character1" parent="." index="2" instance=ExtResource("4_ol0hn")]
-position = Vector2(768, 410)
+[node name="PoliceOfficerContainer" parent="." index="2" instance=ExtResource("5_oujxf")]
 
-[node name="PoliceOfficerContainer" parent="." index="3" instance=ExtResource("5_oujxf")]
+[node name="Characters" type="Node2D" parent="." index="3"]
+
+[node name="Jeffory" parent="Characters" index="0" instance=ExtResource("5_sl33o")]
+position = Vector2(261, 736)
+scale = Vector2(1.55, 1.55)
+
+[node name="Alvin" parent="Characters" index="1" instance=ExtResource("6_d74n6")]
+position = Vector2(716, 526)
+scale = Vector2(1.28, 1.28)
+
+[node name="Susan" parent="Characters" index="2" instance=ExtResource("7_cpm5m")]
+position = Vector2(1098, 547)
+scale = Vector2(1.32, 1.32)
+
+[node name="Lisa" parent="Characters" index="3" instance=ExtResource("8_jcqtm")]
+position = Vector2(1765, 458)
+scale = Vector2(1.09, 1.09)
