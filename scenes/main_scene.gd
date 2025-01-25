@@ -11,9 +11,6 @@ var locations: Array[Location] = []
 ## Reference to location button scene, to populate UI with options.
 @export var location_button: PackedScene
 
-## Reference to location title scene, to display when a location is loaded.
-@export var location_title: PackedScene
-
 ## Location selector UI element, to add children to.
 @export var location_selector: Control
 # (I like adding references to UI like this, so if we move it around later it doesn't break the scripts.)
@@ -74,10 +71,6 @@ func _process(delta: float) -> void:
 			next_location.begin_fade_in()
 			add_child(next_location) # Begin showing
 			current_location = next_location
-			if not Engine.is_editor_hint(): # Don't show title in editor.
-				var title: LocationTitle = location_title.instantiate()
-				title.set_text(next_location.location_name)
-				add_child(title) # Will remove itself.
 			next_location = null # Reset for next time.
 		else: # Current location is fading out.
 			current_location.modulate.a -= delta / current_location.fade_duration

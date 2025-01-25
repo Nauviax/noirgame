@@ -8,6 +8,9 @@ class_name Location
 @export var location_icon: Texture
 @export var location_icon_selected: Texture
 
+## Reference to location title, to show text when a location is loaded.
+@onready var location_title: LocationTitle = $"LocationTitle"
+
 ## Duration of fade in/out
 var fade_duration: float = 0.5
 
@@ -26,4 +29,5 @@ func _process(delta: float) -> void:
 		if modulate.a >= 1:
 			modulate.a = 1
 			fade_in = false
+			location_title.show_text(location_name)
 
