@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://66w4x3huo6bw"
-path="res://.godot/imported/boilerroom.png-148c281a45df212d76fbc539a826573a.ctex"
+path="res://.godot/imported/boilerroom.png-a9248eaa31d9723ccb4ca05b643d1ab7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/backgrounds/boilerroom.png"
-dest_files=["res://.godot/imported/boilerroom.png-148c281a45df212d76fbc539a826573a.ctex"]
+source_file="res://assets/sprites/backgrounds/boilerroom.png"
+dest_files=["res://.godot/imported/boilerroom.png-a9248eaa31d9723ccb4ca05b643d1ab7.ctex"]
 
 [params]
 

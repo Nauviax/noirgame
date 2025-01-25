@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtv0b1veua863"
-path="res://.godot/imported/lounge.png-dec9992b927a1ad1b1e8a0cd50d70554.ctex"
+path="res://.godot/imported/lounge.png-3e735018efb6941be92da0eaae09d885.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/backgrounds/lounge.png"
-dest_files=["res://.godot/imported/lounge.png-dec9992b927a1ad1b1e8a0cd50d70554.ctex"]
+source_file="res://assets/sprites/backgrounds/lounge.png"
+dest_files=["res://.godot/imported/lounge.png-3e735018efb6941be92da0eaae09d885.ctex"]
 
 [params]
 
