@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddmyn36w8a0t6"
-path="res://.godot/imported/garden.png-0a2a96d2d6bb4fb5b94b943d3f373801.ctex"
+uid="uid://couuibjenlfdu"
+path="res://.godot/imported/kimberly.png-5ce58461cb643fb5b16c12e44856c8a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/backgrounds/garden.png"
-dest_files=["res://.godot/imported/garden.png-0a2a96d2d6bb4fb5b94b943d3f373801.ctex"]
+source_file="res://assets/sprites/Character/kimberly.png"
+dest_files=["res://.godot/imported/kimberly.png-5ce58461cb643fb5b16c12e44856c8a3.ctex"]
 
 [params]
 

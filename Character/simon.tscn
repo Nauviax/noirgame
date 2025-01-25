@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcuaiorejkaob"]
+
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_xeokm"]
+[ext_resource type="Texture2D" uid="uid://c5mmo2nbne3xv" path="res://assets/sprites/Character/simon.png" id="2_a2ejk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6tonr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a2ejk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arasq"]
+size = Vector2(151.14, 282.987)
+
+[node name="BaseCharacter" instance=ExtResource("1_xeokm")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_6tonr")
+
+[node name="Label" parent="SpeechBubble" index="1"]
+text = "Simon talking"
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "Simon thinking"
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+position = Vector2(-0.0721784, -0.343078)
+scale = Vector2(0.953715, 1.09788)
+shape = SubResource("RectangleShape2D_arasq")
+
+[node name="Label" parent="NamePanel" index="1"]
+text = "Simon"

@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
-[ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/ballroom.tscn" id="2_w55ox"]
-[ext_resource type="PackedScene" uid="uid://c34eynjqtbvev" path="res://scenes/locations/boilerroom.tscn" id="3_al1ud"]
-[ext_resource type="PackedScene" uid="uid://bw1vmk18auxqg" path="res://scenes/locations/garden.tscn" id="4_5slp5"]
+[ext_resource type="PackedScene" path="res://scenes/locations/ballroom.tscn" id="2_w55ox"]
+[ext_resource type="PackedScene" path="res://scenes/locations/boilerroom.tscn" id="3_al1ud"]
+[ext_resource type="PackedScene" path="res://scenes/locations/garden.tscn" id="4_5slp5"]
 [ext_resource type="PackedScene" uid="uid://bei0eo100huqm" path="res://ui/location_selector/location_button.tscn" id="4_kf4gn"]
-[ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://Assets/Sprites/ui/BasicToolbar.png" id="5_b7xis"]
-[ext_resource type="PackedScene" uid="uid://bbr170fe47pa" path="res://scenes/locations/lounge.tscn" id="5_dmoti"]
+[ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://assets/sprites/ui/BasicToolbar.png" id="5_b7xis"]
+[ext_resource type="PackedScene" path="res://scenes/locations/lounge.tscn" id="5_dmoti"]
 [ext_resource type="PackedScene" uid="uid://3e8l22ivr6b0" path="res://ui/location_title/location_title.tscn" id="5_v70xg"]
-[ext_resource type="Texture2D" uid="uid://yttetfqbftuo" path="res://Assets/Sprites/backgrounds/instructions.png" id="8_gu75t"]
-[ext_resource type="Texture2D" uid="uid://dck2wu2phju0m" path="res://Assets/Sprites/backgrounds/startscreen.png" id="9_cohus"]
+[ext_resource type="Texture2D" uid="uid://yttetfqbftuo" path="res://assets/sprites/backgrounds/instructions.png" id="8_gu75t"]
+[ext_resource type="Texture2D" uid="uid://dck2wu2phju0m" path="res://assets/sprites/backgrounds/startscreen.png" id="9_cohus"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riku2"]
 

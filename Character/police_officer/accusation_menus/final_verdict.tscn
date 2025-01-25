@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://brbv80t381ian"]
+
+[ext_resource type="Script" path="res://character/police_officer/accusation_menus/final_verdict.gd" id="1_ndm3e"]
+
+[node name="FinalVerdict" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndm3e")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 35.0
+offset_right = 180.0
+offset_bottom = 104.0
+text = "Right"
+
+[node name="CloseButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 79.0
+offset_right = 93.0
+offset_bottom = 110.0
+text = "Close"
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
