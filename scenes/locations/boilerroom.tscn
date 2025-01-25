@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_gxxq4"]
 [ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assets/sprites/backgrounds/boilerroom.png" id="3_soxlh"]
+[ext_resource type="PackedScene" uid="uid://cjhna6ghccfmf" path="res://character/gordon.tscn" id="4_abiu4"]
 
 [node name="BaseLocation" instance=ExtResource("1_gxxq4")]
 location_name = "Boiler Room"
@@ -9,3 +10,13 @@ location_name = "Boiler Room"
 [node name="Background" parent="." index="0"]
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_soxlh")
+
+[node name="Thing2" type="Sprite2D" parent="." index="1"]
+position = Vector2(722, 143)
+rotation = 0.190241
+skew = -0.237365
+texture = ExtResource("2_43n25")
+
+[node name="Gordon" parent="." index="2" instance=ExtResource("4_abiu4")]
+position = Vector2(986, 728)
+scale = Vector2(1.91, 1.91)
