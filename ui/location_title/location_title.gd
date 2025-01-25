@@ -11,18 +11,16 @@ var center_pause_delay: float = 2 # Time standing still in the center.
 var state: int = 0
 
 ## Onready, set opacity to 0 and position to screen center.
-func _ready():
+func _ready() -> void:
 	modulate.a = 0
-	print(get_viewport_rect().size.x)
 	position = Vector2(get_viewport_rect().size.x / 2 + spawn_x_offset, dist_from_top)
-	print(position)
 
 ## Set label text.
-func set_text(text: String):
+func set_text(text: String) -> void:
 	$Label.text = text
 
 ## Travel across the screen right to left, fading in then out.
-func _process(delta):
+func _process(delta) -> void:
 	match state:
 		0:
 			position.x -= spawn_x_offset * delta / duration
