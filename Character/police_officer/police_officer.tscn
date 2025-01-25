@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://vwmvgp2pq2sf"]
 
 [ext_resource type="Script" path="res://character/police_officer/police_officer.gd" id="1_spfcu"]
-[ext_resource type="Texture2D" uid="uid://x81jajkcqdes" path="res://character/police_officer/police-officer-euclidean-vector-stock-illustration-cop-policeman-png-clip-art-image-3a53eb8c4bb82437e4a390ababda7c84.png" id="2_gkhb1"]
+[ext_resource type="Texture2D" uid="uid://8ee5iq0hvlgv" path="res://assets/sprites/Character/cop_bob.png" id="2_xxcp7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pc3a0"]
 radius = 66.0
@@ -11,8 +11,8 @@ height = 306.0
 script = ExtResource("1_spfcu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("2_gkhb1")
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("2_xxcp7")
 
 [node name="Area2D" type="Area2D" parent="."]
 
