@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://e2hoc7aqbul6"]
+
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_s37f2"]
+[ext_resource type="Texture2D" uid="uid://cb6g6plihikg7" path="res://assets/sprites/character/sarah.png" id="2_aolpd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ubf54"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aolpd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdjwi"]
+size = Vector2(136, 284)
+
+[node name="BaseCharacter" instance=ExtResource("1_s37f2")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_ubf54")
+
+[node name="Label" parent="SpeechBubble" index="1"]
+text = "Sarah talking"
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "Sarah thinking"
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+shape = SubResource("RectangleShape2D_hdjwi")
+
+[node name="Label" parent="NamePanel" index="1"]
+text = "Sarah"
