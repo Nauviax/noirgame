@@ -1,30 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://brbv80t381ian"]
+[gd_scene load_steps=5 format=3 uid="uid://brbv80t381ian"]
 
 [ext_resource type="Script" path="res://character/police_officer/accusation_menus/final_verdict.gd" id="1_ndm3e"]
+[ext_resource type="Texture2D" uid="uid://c8trc6w2lx02j" path="res://assets/sprites/backgrounds/mislead_ending.png" id="2_6hnt1"]
+[ext_resource type="Texture2D" uid="uid://8uh05328gken" path="res://assets/sprites/backgrounds/fail_ending.png" id="3_nodxr"]
+[ext_resource type="Texture2D" uid="uid://dethf1rbearq4" path="res://assets/sprites/backgrounds/good_ending.png" id="3_wlyaa"]
 
-[node name="FinalVerdict" type="Control"]
-layout_mode = 3
+[node name="FinalVerdict" type="TextureRect"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_wlyaa")
 script = ExtResource("1_ndm3e")
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 31.0
-offset_top = 35.0
-offset_right = 180.0
-offset_bottom = 104.0
-text = "Right"
+_fail_background = ExtResource("3_nodxr")
+_mislead_background = ExtResource("2_6hnt1")
+_good_background = ExtResource("3_wlyaa")
 
 [node name="CloseButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 79.0
-offset_right = 93.0
-offset_bottom = 110.0
-text = "Close"
+offset_left = 1380.0
+offset_top = 861.0
+offset_right = 1783.0
+offset_bottom = 957.0
+theme_override_font_sizes/font_size = 64
+text = "Exit Game"
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

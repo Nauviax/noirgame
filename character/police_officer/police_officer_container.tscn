@@ -1,8 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://byb1isfrym7sm"]
+[gd_scene load_steps=21 format=3 uid="uid://byb1isfrym7sm"]
 
 [ext_resource type="PackedScene" uid="uid://5v7o53hnhl1g" path="res://character/police_officer/accusation_menus/accusation_menu.tscn" id="1_fw6p8"]
 [ext_resource type="PackedScene" uid="uid://vwmvgp2pq2sf" path="res://character/police_officer/police_officer.tscn" id="1_ugf2o"]
 [ext_resource type="PackedScene" uid="uid://brbv80t381ian" path="res://character/police_officer/accusation_menus/final_verdict.tscn" id="3_dwasg"]
+[ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="3_i2w8b"]
+[ext_resource type="Texture2D" uid="uid://buinpwwviqd1j" path="res://assets/sprites/character/alvin.png" id="4_3mchr"]
+[ext_resource type="Texture2D" uid="uid://fegmt02eomc7" path="res://assets/sprites/character/barbra.png" id="5_f6i3y"]
+[ext_resource type="Texture2D" uid="uid://d71qn1pyta47" path="res://assets/sprites/character/cory.png" id="6_2son1"]
+[ext_resource type="Texture2D" uid="uid://dunbikeai5vfp" path="res://assets/sprites/character/gordon.png" id="7_73no8"]
+[ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/character/jeffory.png" id="8_7aw8v"]
+[ext_resource type="Texture2D" uid="uid://cbk12t4o4brwl" path="res://assets/sprites/character/jermiah.png" id="9_tboyg"]
+[ext_resource type="Texture2D" uid="uid://couuibjenlfdu" path="res://assets/sprites/character/kimberly.png" id="10_pfvml"]
+[ext_resource type="Texture2D" uid="uid://6jryx0oi6a5k" path="res://assets/sprites/character/lisa.png" id="11_pxvcn"]
+[ext_resource type="Texture2D" uid="uid://cb6g6plihikg7" path="res://assets/sprites/character/sarah.png" id="12_rgxng"]
+[ext_resource type="Texture2D" uid="uid://c5mmo2nbne3xv" path="res://assets/sprites/character/simon.png" id="13_kllca"]
+[ext_resource type="Texture2D" uid="uid://dunl6f8k15e2i" path="res://assets/sprites/character/susan.png" id="14_r4ktc"]
+[ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="15_q62oa"]
+[ext_resource type="Texture2D" uid="uid://dtv0b1veua863" path="res://assets/sprites/backgrounds/lounge.png" id="16_rg5dq"]
+[ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assets/sprites/backgrounds/boilerroom.png" id="17_02l2g"]
+[ext_resource type="Texture2D" uid="uid://ddmyn36w8a0t6" path="res://assets/sprites/backgrounds/garden.png" id="18_2w2re"]
+[ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="19_fr80e"]
 
 [node name="PoliceOfficerContainer" type="Node2D"]
 
@@ -15,28 +32,28 @@ _final_verdict_ui = NodePath("../FinalVerdict")
 
 [node name="CulpritAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
-option1 = "Anna"
-option2 = "Bob"
-option3 = "Sebastian"
+optionTexts = Array[String](["Alison", "Alvin", "Barbra", "Cory", "Gordon", "Jeffory", "Jermiah", "Kimberly", "Lisa", "Sarah", "Simon", "Susan"])
+optionTextures = Array[Texture2D]([ExtResource("3_i2w8b"), ExtResource("4_3mchr"), ExtResource("5_f6i3y"), ExtResource("6_2son1"), ExtResource("7_73no8"), ExtResource("8_7aw8v"), ExtResource("9_tboyg"), ExtResource("10_pfvml"), ExtResource("11_pxvcn"), ExtResource("12_rgxng"), ExtResource("13_kllca"), ExtResource("14_r4ktc")])
 
 [node name="WeaponAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
-option1 = "Knife"
-option2 = "Gun"
-option3 = "Bubble Blower"
+optionTexts = Array[String](["Knife", "Gun", "Bubble Blower", "Pipe", "Wrench"])
+optionTextures = Array[Texture2D]([ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa")])
 
 [node name="LocationAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
-option1 = "Lounge"
-option2 = "Garden"
-option3 = "Boiler Room"
+optionTexts = Array[String](["Lounge", "Boiler Room", "Garden", "Ballroom"])
+optionTextures = Array[Texture2D]([ExtResource("16_rg5dq"), ExtResource("17_02l2g"), ExtResource("18_2w2re"), ExtResource("19_fr80e")])
 
 [node name="FinalVerdict" parent="." instance=ExtResource("3_dwasg")]
 visible = false
-offset_left = 790.0
-offset_top = 168.0
-offset_right = 790.0
-offset_bottom = 168.0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [connection signal="option_selected" from="CulpritAccusationMenu" to="PoliceOfficer" method="_on_accusation_culprit_selected"]
 [connection signal="option_selected" from="WeaponAccusationMenu" to="PoliceOfficer" method="_on_accusation_weapon_selected"]

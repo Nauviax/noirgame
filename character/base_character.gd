@@ -20,7 +20,7 @@ func _ready():
 	thought_bubble_timer.start()
 	
 
-func _on_click_area_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_click_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if !speech_bubble.visible and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		thought_bubble.visible = false
 		thought_bubble_timer.stop()
