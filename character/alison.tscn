@@ -1,13 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://dglf20iwoa2m6"]
+[gd_scene load_steps=5 format=3 uid="uid://bm3c0ll6rem8i"]
 
-[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_wfkkv"]
-[ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="2_3tecy"]
+[ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_t2oms"]
+[ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="2_75wlj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_3tecy")
+"texture": ExtResource("2_75wlj")
 }],
 "loop": true,
 "name": &"default",
@@ -17,7 +17,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
 size = Vector2(170, 284)
 
-[node name="Alison" instance=ExtResource("1_wfkkv")]
+[node name="Alison" instance=ExtResource("1_t2oms")]
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.999985, -1.00002)
