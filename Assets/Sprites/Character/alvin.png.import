@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buinpwwviqd1j"
-path="res://.godot/imported/alvin.png-474c538f309a4c86b3f683f9426588d8.ctex"
+path="res://.godot/imported/alvin.png-078bd8e9ac985f45806454d5dcc14f8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Character/alvin.png"
-dest_files=["res://.godot/imported/alvin.png-474c538f309a4c86b3f683f9426588d8.ctex"]
+source_file="res://assets/sprites/character/alvin.png"
+dest_files=["res://.godot/imported/alvin.png-078bd8e9ac985f45806454d5dcc14f8c.ctex"]
 
 [params]
 

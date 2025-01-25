@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5mmo2nbne3xv"
-path="res://.godot/imported/simon.png-f8a818dada5869712fc5dbb38a42881b.ctex"
+path="res://.godot/imported/simon.png-f36d7e1e5824a749bc797ce91b6070ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Character/simon.png"
-dest_files=["res://.godot/imported/simon.png-f8a818dada5869712fc5dbb38a42881b.ctex"]
+source_file="res://assets/sprites/character/simon.png"
+dest_files=["res://.godot/imported/simon.png-f36d7e1e5824a749bc797ce91b6070ba.ctex"]
 
 [params]
 
