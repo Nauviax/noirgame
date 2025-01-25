@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7witf3tlm7tb"]
+[gd_scene load_steps=7 format=3 uid="uid://c7witf3tlm7tb"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_oshgo"]
 [ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="3_n6cbb"]
-[ext_resource type="PackedScene" uid="uid://byb1isfrym7sm" path="res://character/police_officer/police_officer_container.tscn" id="5_oujxf"]
 [ext_resource type="PackedScene" uid="uid://4jtunr04q51l" path="res://character/jeffory.tscn" id="5_sl33o"]
 [ext_resource type="PackedScene" uid="uid://cweq7wnrbj2un" path="res://character/alvin.tscn" id="6_d74n6"]
 [ext_resource type="PackedScene" uid="uid://tf5ng5t1bhtu" path="res://character/susan.tscn" id="7_cpm5m"]
@@ -15,9 +14,7 @@ location_name = "Ballroom"
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_n6cbb")
 
-[node name="PoliceOfficerContainer" parent="." index="1" instance=ExtResource("5_oujxf")]
-
-[node name="Characters" type="Node2D" parent="." index="2"]
+[node name="Characters" type="Node2D" parent="." index="1"]
 
 [node name="Jeffory" parent="Characters" index="0" instance=ExtResource("5_sl33o")]
 position = Vector2(261, 736)

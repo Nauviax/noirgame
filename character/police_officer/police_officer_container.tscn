@@ -24,7 +24,7 @@
 [node name="PoliceOfficerContainer" type="Node2D"]
 
 [node name="PoliceOfficer" parent="." node_paths=PackedStringArray("_accusation_culprit_menu", "_accusation_weapon_menu", "_accusation_location_menu", "_final_verdict_ui") instance=ExtResource("1_ugf2o")]
-position = Vector2(951, 372)
+position = Vector2(1751, 726)
 _accusation_culprit_menu = NodePath("../CulpritAccusationMenu")
 _accusation_weapon_menu = NodePath("../WeaponAccusationMenu")
 _accusation_location_menu = NodePath("../LocationAccusationMenu")

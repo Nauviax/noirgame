@@ -4,14 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://8ee5iq0hvlgv" path="res://assets/sprites/character/cop_bob.png" id="2_orjoo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pc3a0"]
-radius = 66.0
-height = 306.0
+radius = 90.0
+height = 394.0
 
 [node name="PoliceOfficer" type="Node2D"]
 script = ExtResource("1_spfcu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.72, 0.72)
 texture = ExtResource("2_orjoo")
 
 [node name="Area2D" type="Area2D" parent="."]

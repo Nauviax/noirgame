@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ciqo7jrq2itxu"]
+[gd_scene load_steps=15 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
 [ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/ballroom.tscn" id="3_al1ud"]
@@ -78,8 +78,4 @@ shape = SubResource("RectangleShape2D_siqa5")
 stream = ExtResource("11_4ndcw")
 autoplay = true
 
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110781" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110781" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110782" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110782" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110783" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@110783" method="_on_pressed"]
 [connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]

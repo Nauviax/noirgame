@@ -15,18 +15,18 @@ accusationButton = ExtResource("2_vywxy")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 268.0
-offset_top = 226.0
-offset_right = 810.0
-offset_bottom = 452.0
+offset_left = 978.0
+offset_top = 454.0
+offset_right = 1520.0
+offset_bottom = 680.0
 alignment = 1
 
 [node name="CancelButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 525.0
-offset_top = 467.0
-offset_right = 748.0
-offset_bottom = 498.0
+offset_left = 1277.0
+offset_top = 719.0
+offset_right = 1500.0
+offset_bottom = 750.0
 text = "Um, I'm not sure anymore...
 "
 
