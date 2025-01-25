@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cls05x38txqwe"
-path="res://.godot/imported/BasicToolbar.png-46c423400ac4dc8e8bb31a6b8cfbe8a2.ctex"
+uid="uid://66w4x3huo6bw"
+path="res://.godot/imported/boilerroom.png-148c281a45df212d76fbc539a826573a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/ui_sprites/BasicToolbar.png"
-dest_files=["res://.godot/imported/BasicToolbar.png-46c423400ac4dc8e8bb31a6b8cfbe8a2.ctex"]
+source_file="res://Assets/Sprites/backgrounds/boilerroom.png"
+dest_files=["res://.godot/imported/boilerroom.png-148c281a45df212d76fbc539a826573a.ctex"]
 
 [params]
 

@@ -1,24 +1,35 @@
-[gd_scene load_steps=7 format=3 uid="uid://ciqo7jrq2itxu"]
+[gd_scene load_steps=13 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
-[ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/inside_location.tscn" id="2_w55ox"]
-[ext_resource type="PackedScene" uid="uid://c34eynjqtbvev" path="res://scenes/locations/outside_location.tscn" id="3_al1ud"]
+[ext_resource type="PackedScene" path="res://scenes/locations/ballroom.tscn" id="2_w55ox"]
+[ext_resource type="PackedScene" path="res://scenes/locations/boilerroom.tscn" id="3_al1ud"]
+[ext_resource type="PackedScene" path="res://scenes/locations/garden.tscn" id="4_5slp5"]
 [ext_resource type="PackedScene" uid="uid://bei0eo100huqm" path="res://ui/location_selector/location_button.tscn" id="4_kf4gn"]
-[ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://ui/ui_sprites/BasicToolbar.png" id="5_b7xis"]
+[ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://assets/sprites/ui/BasicToolbar.png" id="5_b7xis"]
+[ext_resource type="PackedScene" path="res://scenes/locations/lounge.tscn" id="5_dmoti"]
+[ext_resource type="PackedScene" uid="uid://3e8l22ivr6b0" path="res://ui/location_title/location_title.tscn" id="5_v70xg"]
+[ext_resource type="Texture2D" uid="uid://yttetfqbftuo" path="res://assets/sprites/backgrounds/instructions.png" id="8_gu75t"]
+[ext_resource type="Texture2D" uid="uid://dck2wu2phju0m" path="res://assets/sprites/backgrounds/startscreen.png" id="9_cohus"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riku2"]
 
-[node name="MainScene" type="Node2D" node_paths=PackedStringArray("location_selector")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_siqa5"]
+size = Vector2(1920, 1080)
+
+[node name="MainScene" type="Node2D" node_paths=PackedStringArray("location_selector", "start_screen")]
 script = ExtResource("1_41gje")
-locations_unloaded = Array[PackedScene]([ExtResource("2_w55ox"), ExtResource("3_al1ud")])
+locations_unloaded = Array[PackedScene]([ExtResource("5_dmoti"), ExtResource("2_w55ox"), ExtResource("3_al1ud"), ExtResource("4_5slp5")])
 location_button = ExtResource("4_kf4gn")
+location_title = ExtResource("5_v70xg")
 location_selector = NodePath("UI/LevelSelectToolbar/LevelSelect")
+start_screen = NodePath("StartScreen")
+instructions_texture = ExtResource("8_gu75t")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
 [node name="UI" type="PanelContainer" parent="."]
-z_index = 99
+z_index = 10
 custom_minimum_size = Vector2(1920, 1080)
 offset_right = 40.0
 offset_bottom = 40.0
@@ -39,5 +50,20 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 
+[node name="StartScreen" type="Sprite2D" parent="."]
+visible = false
+z_index = 20
+texture = ExtResource("9_cohus")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="StartScreen"]
+position = Vector2(960, 540)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StartScreen/Area2D"]
+shape = SubResource("RectangleShape2D_siqa5")
+
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17246" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17246" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17247" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17247" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17248" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17248" method="_on_pressed"]
+[connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]
