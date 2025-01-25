@@ -1,10 +1,13 @@
 extends Node2D
 
 
+@export var _background : TextureRect
 @export var _accusation_culprit_menu : AccusationMenu
 @export var _accusation_weapon_menu : AccusationMenu
 @export var _accusation_location_menu : AccusationMenu
 @export var _final_verdict_ui : FinalVerdict
+
+@onready var _levelSelectToolbar := get_tree().root.get_node("/root/MainScene/UI/LevelSelectToolbar")
 
 var _selected_culprit : String
 var _selected_weapon : String
@@ -24,7 +27,10 @@ func _on_mouse_exited() -> void:
 
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
-	if event is InputEventMouseButton and event.is_pressed():
+	if event is InputEventMouseButton and event.is_pressed() and not _background.visible:
+		# TODO Maybe fade in
+		_background.visible = true
+		_levelSelectToolbar.visible = false
 		_accusation_culprit_menu.visible = true
 
 
@@ -48,6 +54,9 @@ func _on_accusation_location_selected(option: String) -> void:
 	else:
 		_final_verdict_ui.set_verdict(0)
 	
-	var levelSelectToolbar := get_tree().root.get_node("/root/MainScene/UI/LevelSelectToolbar")
-	levelSelectToolbar.visible = false
 	_final_verdict_ui.visible = true
+
+
+func _on_accusation_menu_selection_cancelled() -> void:
+		_levelSelectToolbar.visible = true
+		_background.visible = false

@@ -4,6 +4,7 @@ extends Control
 
 
 signal option_selected(option: String)
+signal selection_cancelled()
 
 
 @export var optionTexts : Array[String]
@@ -24,6 +25,7 @@ func _ready() -> void:
 
 
 func _on_cancel_button_pressed() -> void:
+	selection_cancelled.emit()
 	visible = false
 
 
