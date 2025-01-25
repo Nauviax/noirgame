@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="2_rxwbp"]
 
 [node name="BaseLocation" instance=ExtResource("1_gxxq4")]
-location_name = "Inside"
+location_name = "Outside"
 location_icon = ExtResource("2_43n25")
 
 [node name="Background" parent="." index="0"]

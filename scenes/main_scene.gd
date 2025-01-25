@@ -11,6 +11,9 @@ var locations: Array[Location] = []
 ## Reference to location button scene, to populate UI with options.
 @export var location_button: PackedScene
 
+## Reference to location title scene, to display when a location is loaded.
+@export var location_title: PackedScene
+
 ## Location selector UI element, to add children to.
 @export var location_selector: Control
 # (I like adding references to UI like this, so if we move it around later it doesn't break the scripts.)
@@ -36,3 +39,6 @@ func show_location(new_location: Location):
 		remove_child(current_location)
 	current_location = new_location
 	add_child(current_location)
+	var title: LocationTitle = location_title.instantiate()
+	title.set_text(new_location.location_name)
+	add_child(title) # Will remove itself.

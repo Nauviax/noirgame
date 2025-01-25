@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dglf20iwoa2m6" path="res://Character/Character1/character1.tscn" id="4_ol0hn"]
 [ext_resource type="PackedScene" uid="uid://byb1isfrym7sm" path="res://scenes/police_officer/police_officer_container.tscn" id="5_oujxf"]
 
-[node name="BaseLocation" instance=ExtResource("1_oshgo")]
+[node name="BaseLocation2" instance=ExtResource("1_oshgo")]
 location_name = "Inside"
 location_icon = ExtResource("2_8owp1")
 

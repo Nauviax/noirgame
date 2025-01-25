@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://3e8l22ivr6b0"]
+
+[ext_resource type="Script" path="res://ui/location_title/location_title.gd" id="1_h5lb1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wnai5"]
+font_size = 96
+
+[node name="LocationTitle" type="Node2D"]
+script = ExtResource("1_h5lb1")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -495.0
+offset_top = -66.0
+offset_right = 495.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sample Text"
+label_settings = SubResource("LabelSettings_wnai5")
+horizontal_alignment = 1
