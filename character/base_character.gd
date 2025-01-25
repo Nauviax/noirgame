@@ -2,7 +2,6 @@ extends Node2D
 
 @onready var speech_bubble = $SpeechBubble
 @onready var thought_bubble = $ThoughtBubble
-@onready var name_panel = $NamePanel
 @onready var thought_bubble_timer = $ThoughtBubbleTimer
 @onready var click_area = $ClickArea
 
@@ -22,13 +21,7 @@ func _on_click_area_mouse_exited() -> void:
 	if (speech_bubble.visible):
 		speech_bubble.visible = false
 		thought_bubble_timer.start()
-		
-	name_panel.visible = false
 
 
 func _on_thought_bubble_timer_timeout() -> void:
 	thought_bubble.visible =  !thought_bubble.visible
-
-
-func _on_click_area_mouse_entered() -> void:
-	name_panel.visible = true

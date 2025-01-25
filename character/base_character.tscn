@@ -45,6 +45,14 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "This is label"
 
+[node name="NameTag" type="TextureRect" parent="SpeechBubble"]
+layout_mode = 0
+offset_left = -272.0
+offset_top = -31.0
+offset_right = 88.0
+offset_bottom = 329.0
+texture = ExtResource("2_kujgu")
+
 [node name="ThoughtBubble" type="Control" parent="."]
 visible = false
 layout_mode = 3
@@ -79,25 +87,6 @@ text = "This is a thought bubble"
 [node name="ThoughtBubbleTimer" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
-
-[node name="NamePanel" type="Control" parent="."]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect" type="TextureRect" parent="NamePanel"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_kujgu")
-
-[node name="Label" type="Label" parent="NamePanel"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Name"
 
 [connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
 [connection signal="mouse_entered" from="ClickArea" to="." method="_on_click_area_mouse_entered"]

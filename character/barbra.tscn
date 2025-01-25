@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://daddowoivp8ac"]
+[gd_scene load_steps=7 format=3 uid="uid://daddowoivp8ac"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_nifmo"]
 [ext_resource type="Texture2D" uid="uid://fegmt02eomc7" path="res://assets/sprites/character/barbra.png" id="2_4ho87"]
+[ext_resource type="Texture2D" uid="uid://decex4m1whyp5" path="res://assets/sprites/character/nametag/barbraNameTag.png" id="3_vwdkv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kr6wo"]
 animations = [{
@@ -14,6 +15,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hnkk"]
+atlas = ExtResource("3_vwdkv")
+region = Rect2(224.616, 62.4591, 138.182, 50.4895)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3kwgd"]
 size = Vector2(170, 284)
 
@@ -22,14 +27,38 @@ size = Vector2(170, 284)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_kr6wo")
 
+[node name="TextureRect" parent="SpeechBubble" index="0"]
+offset_left = -314.0
+offset_top = -502.0
+offset_right = -8.0
+offset_bottom = -219.0
+
 [node name="Label" parent="SpeechBubble" index="1"]
+offset_left = -242.0
+offset_top = -415.0
+offset_right = -77.0
+offset_bottom = -381.0
 text = "Barbra talking"
 
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -351.0
+offset_top = -562.0
+offset_right = -130.0
+offset_bottom = -489.0
+texture = SubResource("AtlasTexture_8hnkk")
+
+[node name="TextureRect" parent="ThoughtBubble" index="0"]
+offset_left = -58.0
+offset_top = -495.0
+offset_right = 302.0
+offset_bottom = -173.0
+
 [node name="Label" parent="ThoughtBubble" index="1"]
+offset_left = 35.0
+offset_top = -417.0
+offset_right = 313.0
+offset_bottom = -336.0
 text = "Barbra thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 shape = SubResource("RectangleShape2D_3kwgd")
-
-[node name="Label" parent="NamePanel" index="1"]
-text = "Barbra"

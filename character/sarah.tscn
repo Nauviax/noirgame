@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://e2hoc7aqbul6"]
+[gd_scene load_steps=7 format=3 uid="uid://e2hoc7aqbul6"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_s37f2"]
 [ext_resource type="Texture2D" uid="uid://cb6g6plihikg7" path="res://assets/sprites/character/sarah.png" id="2_aolpd"]
+[ext_resource type="Texture2D" uid="uid://drkh22pbhocpj" path="res://assets/sprites/character/nametag/sarahNameTag.png" id="3_xte6f"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ubf54"]
 animations = [{
@@ -14,6 +15,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntcac"]
+atlas = ExtResource("3_xte6f")
+region = Rect2(85.5457, 0.483803, 116.762, 53.1469)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hdjwi"]
 size = Vector2(136, 284)
 
@@ -22,14 +27,38 @@ size = Vector2(136, 284)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ubf54")
 
+[node name="TextureRect" parent="SpeechBubble" index="0"]
+offset_left = -310.0
+offset_top = -465.0
+offset_right = -46.0
+offset_bottom = -206.0
+
 [node name="Label" parent="SpeechBubble" index="1"]
+offset_left = -247.0
+offset_top = -377.0
+offset_right = -95.0
+offset_bottom = -343.0
 text = "Sarah talking"
 
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -334.0
+offset_top = -526.0
+offset_right = -149.0
+offset_bottom = -449.0
+texture = SubResource("AtlasTexture_ntcac")
+
+[node name="TextureRect" parent="ThoughtBubble" index="0"]
+offset_left = -53.0
+offset_top = -461.0
+offset_right = 296.0
+offset_bottom = -175.0
+
 [node name="Label" parent="ThoughtBubble" index="1"]
+offset_left = 34.0
+offset_top = -384.0
+offset_right = 312.0
+offset_bottom = -303.0
 text = "Sarah thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 shape = SubResource("RectangleShape2D_hdjwi")
-
-[node name="Label" parent="NamePanel" index="1"]
-text = "Sarah"
