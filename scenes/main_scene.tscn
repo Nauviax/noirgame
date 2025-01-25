@@ -63,7 +63,7 @@ position = Vector2(960, 540)
 shape = SubResource("RectangleShape2D_siqa5")
 
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44913" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44913" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44914" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44914" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44915" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@44915" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17246" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17246" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17247" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17247" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17248" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17248" method="_on_pressed"]
 [connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]
