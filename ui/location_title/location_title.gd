@@ -10,14 +10,17 @@ var center_pause_delay: float = 2 # Time standing still in the center.
 ## Animation state. 0 = fade in, 1 = pause, 2 = fade out.
 var state: int = 0
 
-## Onready, set opacity to 0 and position to screen center.
-func _ready() -> void:
+## Set label text, opacity to 0 and position to screen center.
+func show_text(text: String) -> void:
+	state = 0
 	modulate.a = 0
 	position = Vector2(get_viewport_rect().size.x / 2 + spawn_x_offset, dist_from_top)
-
-## Set label text.
-func set_text(text: String) -> void:
 	$Label.text = text
+	show()
+
+## Quick reset function to hide label when leaving scene too quickly.
+func _exit_tree() -> void:
+	hide()
 
 ## Travel across the screen right to left, fading in then out.
 func _process(delta) -> void:
@@ -36,5 +39,5 @@ func _process(delta) -> void:
 			position.x -= spawn_x_offset * delta / duration
 			modulate.a -= delta / duration
 			if modulate.a <= 0:
-				queue_free()
+				hide()
 

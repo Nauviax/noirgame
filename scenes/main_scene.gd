@@ -1,4 +1,3 @@
-@tool # Run in editor.
 extends Node2D
 class_name MainScene
 
@@ -10,9 +9,6 @@ var locations: Array[Location] = []
 
 ## Reference to location button scene, to populate UI with options.
 @export var location_button: PackedScene
-
-## Reference to location title scene, to display when a location is loaded.
-@export var location_title: PackedScene
 
 ## Location selector UI element, to add children to.
 @export var location_selector: Control
@@ -28,7 +24,10 @@ var locations: Array[Location] = []
 var start_clicks: int = 0
 
 ## Currently loaded location.
-var current_location: Location
+var current_location: Location = null
+
+## Next location to load. If not null, current frame will be faded out until new location is loaded.
+var next_location: Location = null
 
 ## Onready, show start screen and populate the UI.
 func _ready() -> void:
@@ -40,11 +39,8 @@ func _ready() -> void:
 		button.texture_normal = location.location_icon
 		button.texture_focused = location.location_icon_selected
 		location_selector.add_child(button)
-	if not Engine.is_editor_hint(): # Don't hide things in editor.
-		start_screen.show()
-		location_selector.hide() # Prevent clicks on UI before game starts.
-	else: # If in editor, show a random location instantly.
-		show_location(locations.pick_random())
+	start_screen.show()
+	location_selector.hide() # Prevent clicks on UI before game starts.
 
 ## Start game function. On first call, show insructions. On second call, hide start screen and load first location.
 func start_game() -> void:
@@ -58,14 +54,23 @@ func start_game() -> void:
 
 ## Load a new location, unloading the current one.
 func show_location(new_location: Location) -> void:
-	if current_location: # Shouldn't ever be false.
-		remove_child(current_location)
-	current_location = new_location
-	add_child(current_location)
-	if not Engine.is_editor_hint(): # Don't show title in editor.
-		var title: LocationTitle = location_title.instantiate()
-		title.set_text(new_location.location_name)
-		add_child(title) # Will remove itself.
+	if next_location:
+		next_location.modulate.a = 1 # Instantly reset opacity, to fix bug when spam clicking.
+	next_location = new_location
+
+## On process, fade out current location if a new one is being loaded.
+func _process(delta: float) -> void:
+	if next_location: # Do nothing if no location is being loaded.
+		if current_location == null or current_location.modulate.a <= 0: # If no location loaded, or current location faded out.
+			if current_location != null: # WAY TO MANY IF STATEMENTS AAAA
+				remove_child(current_location) # Stop showing
+			next_location.begin_fade_in()
+			add_child(next_location) # Begin showing
+			current_location = next_location
+			next_location = null # Reset for next time.
+		else: # Current location is fading out.
+			current_location.modulate.a -= delta / current_location.fade_duration
+			
 
 ## Handle starting game clicks
 func _on_start_screen_input_event(_viewport:Node, event:InputEvent, _shape_idx:int) -> void:

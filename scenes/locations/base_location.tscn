@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://btm57ihbnbuo6"]
+[gd_scene load_steps=4 format=3 uid="uid://btm57ihbnbuo6"]
 
 [ext_resource type="Script" path="res://scenes/locations/base_location.gd" id="1_xr1op"]
 [ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="2_w6did"]
+[ext_resource type="PackedScene" uid="uid://3e8l22ivr6b0" path="res://ui/location_title/location_title.tscn" id="3_prpd0"]
 
 [node name="BaseLocation" type="Node2D"]
 script = ExtResource("1_xr1op")
@@ -10,3 +11,7 @@ location_icon_selected = ExtResource("2_w6did")
 
 [node name="Background" type="Sprite2D" parent="."]
 centered = false
+
+[node name="LocationTitle" parent="." instance=ExtResource("3_prpd0")]
+visible = false
+z_index = 30
