@@ -64,9 +64,6 @@ offset_bottom = -318.0
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_2k2wy")
 
-[node name="NamePanel" parent="." index="5"]
-visible = false
-
 [node name="TextureRect" parent="NamePanel" index="0"]
 offset_left = 91.0
 offset_top = -130.0
