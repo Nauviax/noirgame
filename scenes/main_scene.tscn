@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://ciqo7jrq2itxu"]
+[gd_scene load_steps=12 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
-[ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/ballroom.tscn" id="2_w55ox"]
-[ext_resource type="PackedScene" uid="uid://c34eynjqtbvev" path="res://scenes/locations/boilerroom.tscn" id="3_al1ud"]
+[ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/ballroom.tscn" id="3_al1ud"]
 [ext_resource type="PackedScene" uid="uid://bw1vmk18auxqg" path="res://scenes/locations/garden.tscn" id="4_5slp5"]
 [ext_resource type="PackedScene" uid="uid://bei0eo100huqm" path="res://ui/location_selector/location_button.tscn" id="4_kf4gn"]
 [ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://assets/sprites/ui/basic-toolbar.png" id="5_b7xis"]
@@ -18,7 +17,7 @@ size = Vector2(1920, 1080)
 
 [node name="MainScene" type="Node2D" node_paths=PackedStringArray("location_selector", "start_screen")]
 script = ExtResource("1_41gje")
-locations_unloaded = Array[PackedScene]([ExtResource("5_dmoti"), ExtResource("2_w55ox"), ExtResource("3_al1ud"), ExtResource("4_5slp5")])
+locations_unloaded = Array[PackedScene]([ExtResource("5_dmoti"), ExtResource("3_al1ud"), ExtResource("3_al1ud"), ExtResource("4_5slp5")])
 location_button = ExtResource("4_kf4gn")
 location_title = ExtResource("5_v70xg")
 location_selector = NodePath("UI/LevelSelectToolbar/LevelSelect")
@@ -63,7 +62,7 @@ position = Vector2(960, 540)
 shape = SubResource("RectangleShape2D_siqa5")
 
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17257" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17257" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17258" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17258" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17259" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17259" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18981" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18981" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18982" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18982" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18983" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@18983" method="_on_pressed"]
 [connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]

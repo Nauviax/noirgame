@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bw1vmk18auxqg"]
+[gd_scene load_steps=7 format=3 uid="uid://bw1vmk18auxqg"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_nbo21"]
-[ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/Thing2.png" id="2_tvkyf"]
 [ext_resource type="Texture2D" uid="uid://ddmyn36w8a0t6" path="res://assets/sprites/backgrounds/garden.png" id="3_o8t5m"]
 [ext_resource type="PackedScene" uid="uid://b2qr85pw3em34" path="res://character/kimberly.tscn" id="4_glg1b"]
 [ext_resource type="PackedScene" uid="uid://bcuaiorejkaob" path="res://character/simon.tscn" id="5_6kwjo"]
@@ -10,7 +9,6 @@
 
 [node name="BaseLocation" instance=ExtResource("1_nbo21")]
 location_name = "Garden"
-location_icon = ExtResource("2_tvkyf")
 
 [node name="Background" parent="." index="0"]
 scale = Vector2(0.75, 0.75)
