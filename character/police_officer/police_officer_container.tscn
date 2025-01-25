@@ -81,3 +81,4 @@ grow_vertical = 1
 [connection signal="selection_cancelled" from="WeaponAccusationMenu" to="PoliceOfficer" method="_on_accusation_menu_selection_cancelled"]
 [connection signal="option_selected" from="LocationAccusationMenu" to="PoliceOfficer" method="_on_accusation_location_selected"]
 [connection signal="selection_cancelled" from="LocationAccusationMenu" to="PoliceOfficer" method="_on_accusation_menu_selection_cancelled"]
+[connection signal="closed" from="FinalVerdictScreen" to="PoliceOfficer" method="_on_accusation_menu_selection_cancelled"]

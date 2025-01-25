@@ -14,18 +14,6 @@ var _selected_weapon : String
 var _selected_location : String
 
 
-func _ready() -> void:
-	pass
-
-
-func _on_mouse_entered() -> void:
-	print("Mouse entered")
-
-
-func _on_mouse_exited() -> void:
-	print("Mouse exited")
-
-
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.is_pressed() and not _background.visible:
 		# TODO Maybe fade in
@@ -58,5 +46,5 @@ func _on_accusation_location_selected(option: String) -> void:
 
 
 func _on_accusation_menu_selection_cancelled() -> void:
-		_levelSelectToolbar.visible = true
-		_background.visible = false
+	_levelSelectToolbar.visible = true
+	_background.visible = false
