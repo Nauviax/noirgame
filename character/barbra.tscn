@@ -51,9 +51,12 @@ offset_bottom = -556.231
 texture = SubResource("AtlasTexture_8hnkk")
 
 [node name="ThoughtBubble" parent="." index="2"]
+offset_top = 20.0
+offset_bottom = 60.0
 scale = Vector2(0.72, 0.72)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
+modulate = Color(1, 1, 1, 1)
 offset_left = 40.2778
 offset_top = -544.444
 offset_right = 400.278

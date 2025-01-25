@@ -19,6 +19,7 @@ func _ready():
 	
 	# Start the Timer node
 	thought_bubble_timer.start()
+	thought_bubble.modulate = Color(1, 1, 1, 0)
 	
 
 func _on_click_area_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
@@ -38,14 +39,19 @@ func _on_thought_bubble_timer_timeout() -> void:
 	if (thought_bubble.visible):
 		hide_thought_bubble()
 	else:
-		show_thoght_bubble()
+		show_thought_bubble()
 	#thought_bubble.visible = !thought_bubble.visible
 	
-	
-func show_thoght_bubble():
+func show_thought_bubble():
 	# Make sure the bubble is visible before playing the animation
 	thought_bubble.visible = true
 	animation_player.play("fade_in_slide_up")
+	animation_player.connect("animation_finished", _on_fade_in_finished)
+	
+func _on_fade_in_finished(anim_name):
+	if anim_name == "fade_in_slide_up":
+		thought_bubble.modulate = Color(1, 1, 1, 1)
+		
 
 func hide_thought_bubble():
 	animation_player.play("fade_out_slide_up")
@@ -54,4 +60,5 @@ func hide_thought_bubble():
 func _on_fade_out_finished(anim_name):
 	if anim_name == "fade_out_slide_up":
 		thought_bubble.visible = false
+		thought_bubble.modulate = Color(1, 1, 1, 0)
 		animation_player.disconnect("animation_finished", _on_fade_out_finished)
