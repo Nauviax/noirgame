@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bw1vmk18auxqg"]
+[gd_scene load_steps=8 format=3 uid="uid://bw1vmk18auxqg"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_nbo21"]
 [ext_resource type="Texture2D" uid="uid://scisw6byfwdb" path="res://randomplaceholders/Thing2.png" id="2_tvkyf"]
 [ext_resource type="Texture2D" uid="uid://ddmyn36w8a0t6" path="res://assets/sprites/backgrounds/garden.png" id="3_o8t5m"]
+[ext_resource type="PackedScene" uid="uid://b2qr85pw3em34" path="res://character/kimberly.tscn" id="4_glg1b"]
+[ext_resource type="PackedScene" uid="uid://bcuaiorejkaob" path="res://character/simon.tscn" id="5_6kwjo"]
+[ext_resource type="PackedScene" uid="uid://daddowoivp8ac" path="res://character/barbra.tscn" id="6_s6q2u"]
+[ext_resource type="PackedScene" uid="uid://e2hoc7aqbul6" path="res://character/sarah.tscn" id="7_tskl2"]
 
 [node name="BaseLocation" instance=ExtResource("1_nbo21")]
 location_name = "Garden"
@@ -11,3 +15,21 @@ location_icon = ExtResource("2_tvkyf")
 [node name="Background" parent="." index="0"]
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("3_o8t5m")
+
+[node name="Characters" type="Node2D" parent="." index="1"]
+
+[node name="Kimberly" parent="Characters" index="0" instance=ExtResource("4_glg1b")]
+position = Vector2(362, 710)
+scale = Vector2(1.74, 1.74)
+
+[node name="Simon" parent="Characters" index="1" instance=ExtResource("5_6kwjo")]
+position = Vector2(1150, 648)
+scale = Vector2(1.37, 1.37)
+
+[node name="Barbra" parent="Characters" index="2" instance=ExtResource("6_s6q2u")]
+position = Vector2(1406, 654)
+scale = Vector2(1.4, 1.4)
+
+[node name="Sarah" parent="Characters" index="3" instance=ExtResource("7_tskl2")]
+position = Vector2(1716, 748)
+scale = Vector2(1.83, 1.83)

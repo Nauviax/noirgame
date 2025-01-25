@@ -17,7 +17,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hdjwi"]
 size = Vector2(136, 284)
 
-[node name="BaseCharacter" instance=ExtResource("1_s37f2")]
+[node name="Sarah" instance=ExtResource("1_s37f2")]
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ubf54")
