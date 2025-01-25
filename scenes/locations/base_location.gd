@@ -9,7 +9,7 @@ class_name Location
 @export var location_icon_selected: Texture
 
 ## Duration of fade in/out
-var fade_duration: float = 1.0
+var fade_duration: float = 0.5
 
 ## Animation state for location opacity
 var fade_in: bool = false
