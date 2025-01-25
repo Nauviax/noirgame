@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://4jtunr04q51l"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_d62y4"]
-[ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/Character/jeffory.png" id="2_ytbik"]
+[ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/character/jeffory.png" id="2_ytbik"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fptk5"]
 animations = [{
