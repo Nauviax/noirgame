@@ -9,3 +9,4 @@ location_icon = ExtResource("2_w6did")
 location_icon_selected = ExtResource("2_w6did")
 
 [node name="Background" type="Sprite2D" parent="."]
+centered = false
