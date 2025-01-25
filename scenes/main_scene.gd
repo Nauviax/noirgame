@@ -62,9 +62,10 @@ func show_location(new_location: Location) -> void:
 		remove_child(current_location)
 	current_location = new_location
 	add_child(current_location)
-	var title: LocationTitle = location_title.instantiate()
-	title.set_text(new_location.location_name)
-	add_child(title) # Will remove itself.
+	if not Engine.is_editor_hint(): # Don't show title in editor.
+		var title: LocationTitle = location_title.instantiate()
+		title.set_text(new_location.location_name)
+		add_child(title) # Will remove itself.
 
 ## Handle starting game clicks
 func _on_start_screen_input_event(_viewport:Node, event:InputEvent, _shape_idx:int) -> void:
