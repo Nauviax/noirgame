@@ -4,11 +4,12 @@ extends Node2D
 @onready var thought_bubble = $ThoughtBubble
 @onready var thought_bubble_timer = $ThoughtBubbleTimer
 @onready var click_area = $ClickArea
+@onready var animation_player = $AnimationPlayer
 
 	
 func _ready():
 	# Randomize a delay between 0 and 5 seconds
-	var random_delay = randf_range(0, 5)
+	var random_delay = randf_range(0, 3)
 	
 	# Print the randomized delay
 	print("Timer will start after delay: ", random_delay)
@@ -18,6 +19,7 @@ func _ready():
 	
 	# Start the Timer node
 	thought_bubble_timer.start()
+	thought_bubble.modulate = Color(1, 1, 1, 0)
 	
 
 func _on_click_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
@@ -34,4 +36,29 @@ func _on_click_area_mouse_exited() -> void:
 
 
 func _on_thought_bubble_timer_timeout() -> void:
-	thought_bubble.visible =  !thought_bubble.visible
+	if (thought_bubble.visible):
+		hide_thought_bubble()
+	else:
+		show_thought_bubble()
+	#thought_bubble.visible = !thought_bubble.visible
+	
+func show_thought_bubble():
+	# Make sure the bubble is visible before playing the animation
+	thought_bubble.visible = true
+	animation_player.play("fade_in_slide_up")
+	animation_player.connect("animation_finished", _on_fade_in_finished)
+	
+func _on_fade_in_finished(anim_name):
+	if anim_name == "fade_in_slide_up":
+		thought_bubble.modulate = Color(1, 1, 1, 1)
+		
+
+func hide_thought_bubble():
+	animation_player.play("fade_out_slide_up")
+	animation_player.connect("animation_finished", _on_fade_out_finished)
+
+func _on_fade_out_finished(anim_name):
+	if anim_name == "fade_out_slide_up":
+		thought_bubble.visible = false
+		thought_bubble.modulate = Color(1, 1, 1, 0)
+		animation_player.disconnect("animation_finished", _on_fade_out_finished)

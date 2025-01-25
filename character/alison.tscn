@@ -57,23 +57,19 @@ offset_bottom = -482.286
 texture = SubResource("AtlasTexture_1wptc")
 
 [node name="ThoughtBubble" parent="." index="2"]
-offset_left = -23.0
-offset_top = 11.0
-offset_right = 17.0
-offset_bottom = 51.0
 scale = Vector2(0.69, 0.69)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -204.11
-offset_top = -572.603
-offset_right = 189.89
-offset_bottom = -225.603
+offset_left = 43.4783
+offset_top = -568.116
+offset_right = 437.478
+offset_bottom = -221.116
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = -116.11
-offset_top = -470.603
-offset_right = 161.89
-offset_bottom = -423.603
+offset_left = 131.478
+offset_top = -466.116
+offset_right = 409.478
+offset_bottom = -419.116
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(1, -1)
