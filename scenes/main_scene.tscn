@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://ciqo7jrq2itxu"]
+[gd_scene load_steps=14 format=3 uid="uid://ciqo7jrq2itxu"]
 
 [ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_41gje"]
 [ext_resource type="PackedScene" uid="uid://c7witf3tlm7tb" path="res://scenes/locations/ballroom.tscn" id="3_al1ud"]
 [ext_resource type="PackedScene" uid="uid://bw1vmk18auxqg" path="res://scenes/locations/garden.tscn" id="4_5slp5"]
+[ext_resource type="PackedScene" uid="uid://c34eynjqtbvev" path="res://scenes/locations/boilerroom.tscn" id="4_gnd4k"]
 [ext_resource type="PackedScene" uid="uid://bei0eo100huqm" path="res://ui/location_selector/location_button.tscn" id="4_kf4gn"]
 [ext_resource type="Texture2D" uid="uid://cls05x38txqwe" path="res://assets/sprites/ui/basic-toolbar.png" id="5_b7xis"]
 [ext_resource type="PackedScene" uid="uid://bbr170fe47pa" path="res://scenes/locations/lounge.tscn" id="5_dmoti"]
@@ -23,7 +24,7 @@ size = Vector2(1920, 1080)
 
 [node name="MainScene" type="Node2D" node_paths=PackedStringArray("location_selector", "start_screen")]
 script = ExtResource("1_41gje")
-locations_unloaded = Array[PackedScene]([ExtResource("5_dmoti"), ExtResource("3_al1ud"), ExtResource("3_al1ud"), ExtResource("4_5slp5")])
+locations_unloaded = Array[PackedScene]([ExtResource("5_dmoti"), ExtResource("3_al1ud"), ExtResource("4_gnd4k"), ExtResource("4_5slp5")])
 location_button = ExtResource("4_kf4gn")
 location_selector = NodePath("UI/LevelSelectToolbar/LevelSelect")
 start_screen = NodePath("StartScreen")
