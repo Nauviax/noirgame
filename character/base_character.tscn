@@ -103,8 +103,6 @@ _data = {
 
 [node name="BaseCharacter" type="Node2D"]
 script = ExtResource("1_no52m")
-thought_dialog1 = null
-thought_dialog2 = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 

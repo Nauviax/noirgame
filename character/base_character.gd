@@ -11,16 +11,12 @@ extends Node2D
 
 var current_dialog_index = 0
 var thought_dialogs_length: int
+@onready var thought_bubble_timer_wait_time = thought_bubble_timer.wait_time
 	
 func _ready():
 	# Randomize a delay between 0 and 5 seconds
-	var random_delay = randf_range(0, 3)
-	# Print the randomized delay
-	print("Timer will start after delay: ", random_delay)
-	# Delay the start of the timer by the randomized amount
-	await get_tree().create_timer(random_delay).timeout
-	# Start the Timer node
-	thought_bubble_timer.start()
+	var random_delay = randf_range(2, 5)
+	thought_bubble_timer.start(random_delay)
 	
 	thought_bubble.modulate = Color(1, 1, 1, 0)
 	thought_dialogs_length = len(thought_dialogs)
@@ -42,11 +38,11 @@ func _on_click_area_mouse_exited() -> void:
 
 
 func _on_thought_bubble_timer_timeout() -> void:
+	thought_bubble_timer.wait_time = thought_bubble_timer_wait_time
 	if (thought_bubble.visible):
 		hide_thought_bubble()
 	else:
 		show_thought_bubble()
-	#thought_bubble.visible = !thought_bubble.visible
 	
 func show_thought_bubble():
 	# Make sure the bubble is visible before playing the animation
@@ -57,6 +53,7 @@ func show_thought_bubble():
 func _on_fade_in_finished(anim_name):
 	if anim_name == "fade_in_slide_up":
 		thought_bubble.modulate = Color(1, 1, 1, 1)
+	animation_player.disconnect("animation_finished", _on_fade_in_finished)
 		
 
 func hide_thought_bubble():
