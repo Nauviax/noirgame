@@ -64,7 +64,7 @@ func show_location(new_location: Location) -> void:
 
 ## On process, fade out current location if a new one is being loaded.
 func _process(delta: float) -> void:
-	if next_location: # Do nothing if no location is being loaded.
+	if next_location and not Engine.is_editor_hint(): # Do nothing if no location is being loaded, or in editor.
 		if current_location == null or current_location.modulate.a <= 0: # If no location loaded, or current location faded out.
 			if current_location != null: # WAY TO MANY IF STATEMENTS AAAA
 				remove_child(current_location) # Stop showing
