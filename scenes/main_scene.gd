@@ -1,4 +1,3 @@
-@tool # Run in editor.
 extends Node2D
 class_name MainScene
 
@@ -40,11 +39,8 @@ func _ready() -> void:
 		button.texture_normal = location.location_icon
 		button.texture_focused = location.location_icon_selected
 		location_selector.add_child(button)
-	if not Engine.is_editor_hint(): # Don't hide things in editor.
-		start_screen.show()
-		location_selector.hide() # Prevent clicks on UI before game starts.
-	else: # If in editor, show a random location instantly.
-		show_location(locations.pick_random())
+	start_screen.show()
+	location_selector.hide() # Prevent clicks on UI before game starts.
 
 ## Start game function. On first call, show insructions. On second call, hide start screen and load first location.
 func start_game() -> void:
@@ -64,7 +60,7 @@ func show_location(new_location: Location) -> void:
 
 ## On process, fade out current location if a new one is being loaded.
 func _process(delta: float) -> void:
-	if next_location and not Engine.is_editor_hint(): # Do nothing if no location is being loaded, or in editor.
+	if next_location: # Do nothing if no location is being loaded.
 		if current_location == null or current_location.modulate.a <= 0: # If no location loaded, or current location faded out.
 			if current_location != null: # WAY TO MANY IF STATEMENTS AAAA
 				remove_child(current_location) # Stop showing

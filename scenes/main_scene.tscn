@@ -72,8 +72,4 @@ position = Vector2(960, 540)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StartScreen/Area2D"]
 shape = SubResource("RectangleShape2D_siqa5")
 
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34226" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34226" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34227" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34227" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34228" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@34228" method="_on_pressed"]
 [connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]
