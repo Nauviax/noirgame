@@ -27,24 +27,27 @@ size = Vector2(131, 333)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_qwsjg")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.76, 0.76)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -297.0
-offset_top = -434.0
-offset_right = -39.0
-offset_bottom = -217.0
+offset_left = -380.789
+offset_top = -492.053
+offset_right = -122.789
+offset_bottom = -275.053
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -256.0
-offset_top = -379.0
-offset_right = -67.0
-offset_bottom = -345.0
+offset_left = -339.789
+offset_top = -437.053
+offset_right = -150.789
+offset_bottom = -403.053
 text = "Kimberly talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -332.0
-offset_top = -488.0
-offset_right = -136.0
-offset_bottom = -421.0
+offset_left = -415.789
+offset_top = -546.053
+offset_right = -219.789
+offset_bottom = -479.053
 texture = SubResource("AtlasTexture_n7oah")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]

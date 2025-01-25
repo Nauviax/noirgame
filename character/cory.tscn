@@ -27,24 +27,27 @@ size = Vector2(151, 355)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_2jv7c")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.75, 0.75)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -301.0
-offset_top = -525.0
-offset_right = -10.0
-offset_bottom = -236.0
+offset_left = -412.667
+offset_top = -586.0
+offset_right = -121.667
+offset_bottom = -297.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -217.0
-offset_top = -437.0
-offset_right = -79.0
-offset_bottom = -403.0
+offset_left = -328.667
+offset_top = -498.0
+offset_right = -190.667
+offset_bottom = -464.0
 text = "Cory talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -327.0
-offset_top = -587.0
-offset_right = -152.0
-offset_bottom = -508.0
+offset_left = -438.667
+offset_top = -648.0
+offset_right = -263.667
+offset_bottom = -569.0
 texture = SubResource("AtlasTexture_cgxe5")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]

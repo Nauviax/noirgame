@@ -27,24 +27,27 @@ size = Vector2(170, 284)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_kr6wo")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.65, 0.65)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -314.0
-offset_top = -502.0
-offset_right = -8.0
-offset_bottom = -219.0
+offset_left = -444.538
+offset_top = -569.231
+offset_right = -138.538
+offset_bottom = -286.231
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -242.0
-offset_top = -415.0
-offset_right = -77.0
-offset_bottom = -381.0
+offset_left = -372.538
+offset_top = -482.231
+offset_right = -207.538
+offset_bottom = -448.231
 text = "Barbra talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -351.0
-offset_top = -562.0
-offset_right = -130.0
-offset_bottom = -489.0
+offset_left = -481.538
+offset_top = -629.231
+offset_right = -260.538
+offset_bottom = -556.231
 texture = SubResource("AtlasTexture_8hnkk")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]

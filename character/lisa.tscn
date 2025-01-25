@@ -27,24 +27,27 @@ size = Vector2(170, 302)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_6ehvb")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.71, 0.71)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -313.0
-offset_top = -469.0
-offset_right = -24.0
-offset_bottom = -217.0
+offset_left = -455.155
+offset_top = -524.916
+offset_right = -166.155
+offset_bottom = -272.916
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -237.0
-offset_top = -388.0
-offset_right = -103.0
-offset_bottom = -354.0
+offset_left = -379.155
+offset_top = -443.916
+offset_right = -245.155
+offset_bottom = -409.916
 text = "Lisa talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -317.0
-offset_top = -530.0
-offset_right = -175.0
-offset_bottom = -459.0
+offset_left = -459.155
+offset_top = -585.916
+offset_right = -317.155
+offset_bottom = -514.916
 texture = SubResource("AtlasTexture_l4x3b")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]

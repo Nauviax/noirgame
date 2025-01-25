@@ -33,26 +33,27 @@ offset_left = -9.0
 offset_top = 8.0
 offset_right = 31.0
 offset_bottom = 48.0
+scale = Vector2(0.7, 0.7)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -41.0
-offset_top = -442.0
-offset_right = 319.0
-offset_bottom = -82.0
+offset_left = -39.4286
+offset_top = -502.286
+offset_right = 320.571
+offset_bottom = -142.286
 scale = Vector2(0.74, 0.74)
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = 23.0
-offset_top = -366.0
-offset_right = 250.0
-offset_bottom = -332.0
+offset_left = 24.5714
+offset_top = -426.286
+offset_right = 251.571
+offset_bottom = -392.286
 text = "I am talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -43.0
-offset_top = -474.0
-offset_right = 84.0
-offset_bottom = -422.0
+offset_left = -41.4286
+offset_top = -534.286
+offset_right = 85.5714
+offset_bottom = -482.286
 texture = SubResource("AtlasTexture_1wptc")
 
 [node name="ThoughtBubble" parent="." index="2"]

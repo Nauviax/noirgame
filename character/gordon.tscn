@@ -27,24 +27,27 @@ size = Vector2(150, 307)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_wlvft")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.78, 0.78)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -292.0
-offset_top = -480.0
-offset_right = -22.0
-offset_bottom = -211.0
+offset_left = -375.615
+offset_top = -515.692
+offset_right = -105.615
+offset_bottom = -246.692
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -242.0
-offset_top = -397.0
-offset_right = -69.0
-offset_bottom = -363.0
+offset_left = -325.615
+offset_top = -432.692
+offset_right = -152.615
+offset_bottom = -398.692
 text = "Gordon talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -301.0
-offset_top = -522.0
-offset_right = -138.0
-offset_bottom = -463.0
+offset_left = -384.615
+offset_top = -557.692
+offset_right = -221.615
+offset_bottom = -498.692
 texture = SubResource("AtlasTexture_60ell")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]

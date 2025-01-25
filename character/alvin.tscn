@@ -27,24 +27,27 @@ size = Vector2(147, 362)
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_xfc72")
 
+[node name="SpeechBubble" parent="." index="1"]
+scale = Vector2(0.84, 0.84)
+
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -336.0
-offset_top = -478.0
-offset_right = -102.0
-offset_bottom = -244.0
+offset_left = -370.762
+offset_top = -503.286
+offset_right = -136.762
+offset_bottom = -269.286
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -287.0
-offset_top = -411.0
-offset_right = -144.0
-offset_bottom = -377.0
+offset_left = -321.762
+offset_top = -436.286
+offset_right = -178.762
+offset_bottom = -402.286
 text = "Alvin talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -345.0
-offset_top = -514.0
-offset_right = -221.0
-offset_bottom = -458.0
+offset_left = -379.762
+offset_top = -539.286
+offset_right = -255.762
+offset_bottom = -483.286
 texture = SubResource("AtlasTexture_5abmr")
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
