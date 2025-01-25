@@ -3,23 +3,30 @@ class_name AccusationMenu
 extends Control
 
 
-signal option_selected(option: int)
+signal option_selected(option: String)
 
 
-@export var option1 : String
-@export var option2 : String
-@export var option3 : String
+@export var optionTexts : Array[String]
+@export var optionTextures : Array[Texture2D]
+
+@export var accusationButton : PackedScene
 
 
 func _ready() -> void:
-	$HBoxContainer/AccusationButton1.text = option1
-	$HBoxContainer/AccusationButton2.text = option2
-	$HBoxContainer/AccusationButton3.text = option3
+	for i in range(len(optionTexts)):
+		var text := optionTexts[i]
+		var texture := optionTextures[i]
+		var new_button : AccusationButton = accusationButton.instantiate()
+		new_button.text = text
+		new_button.icon = texture
+		$HBoxContainer.add_child(new_button)
+		new_button.accused.connect(_on_accusation_button_pressed)
 
 
 func _on_cancel_button_pressed() -> void:
 	visible = false
 
 
-func _on_accusation_button_pressed(button_id: int) -> void:
-	option_selected.emit(button_id)
+func _on_accusation_button_pressed(option: String) -> void:
+	option_selected.emit(option)
+	visible = false

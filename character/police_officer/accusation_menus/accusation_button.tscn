@@ -15,4 +15,7 @@ text = "CulpritName"
 icon = ExtResource("1_ndtuc")
 icon_alignment = 1
 vertical_icon_alignment = 0
+expand_icon = true
 script = ExtResource("2_v2wwx")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

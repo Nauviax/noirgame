@@ -11,34 +11,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3vvoc")
+accusationButton = ExtResource("2_vywxy")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 268.0
-offset_top = 226.0
-offset_right = 810.0
-offset_bottom = 452.0
+offset_left = 978.0
+offset_top = 454.0
+offset_right = 1520.0
+offset_bottom = 680.0
 alignment = 1
-
-[node name="AccusationButton1" parent="HBoxContainer" instance=ExtResource("2_vywxy")]
-layout_mode = 2
-
-[node name="AccusationButton2" parent="HBoxContainer" instance=ExtResource("2_vywxy")]
-layout_mode = 2
-
-[node name="AccusationButton3" parent="HBoxContainer" instance=ExtResource("2_vywxy")]
-layout_mode = 2
 
 [node name="CancelButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 525.0
-offset_top = 467.0
-offset_right = 748.0
-offset_bottom = 498.0
+offset_left = 1277.0
+offset_top = 719.0
+offset_right = 1500.0
+offset_bottom = 750.0
 text = "Um, I'm not sure anymore...
 "
 
-[connection signal="pressed" from="HBoxContainer/AccusationButton1" to="." method="_on_accusation_button_pressed" binds= [0]]
-[connection signal="pressed" from="HBoxContainer/AccusationButton2" to="." method="_on_accusation_button_pressed" binds= [1]]
-[connection signal="pressed" from="HBoxContainer/AccusationButton3" to="." method="_on_accusation_button_pressed" binds= [2]]
 [connection signal="pressed" from="CancelButton" to="." method="_on_cancel_button_pressed"]
