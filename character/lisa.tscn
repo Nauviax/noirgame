@@ -50,17 +50,20 @@ offset_right = -317.155
 offset_bottom = -514.916
 texture = SubResource("AtlasTexture_l4x3b")
 
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.73, 0.73)
+
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -50.0
-offset_top = -464.0
-offset_right = 298.0
-offset_bottom = -184.0
+offset_left = -23.2877
+offset_top = -506.849
+offset_right = 324.712
+offset_bottom = -226.849
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 52.0
-offset_top = -385.0
-offset_right = 330.0
-offset_bottom = -304.0
+offset_left = 78.7123
+offset_top = -427.849
+offset_right = 356.712
+offset_bottom = -346.849
 text = "Lisa thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

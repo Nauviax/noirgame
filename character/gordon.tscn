@@ -50,17 +50,20 @@ offset_right = -221.615
 offset_bottom = -498.692
 texture = SubResource("AtlasTexture_60ell")
 
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.71, 0.71)
+
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -57.0
-offset_top = -507.0
-offset_right = 303.0
-offset_bottom = -185.0
+offset_left = 5.6338
+offset_top = -557.746
+offset_right = 365.634
+offset_bottom = -235.746
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 30.0
-offset_top = -427.0
-offset_right = 308.0
-offset_bottom = -346.0
+offset_left = 92.6338
+offset_top = -477.746
+offset_right = 370.634
+offset_bottom = -396.746
 text = "Gordon thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

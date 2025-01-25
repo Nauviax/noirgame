@@ -50,17 +50,20 @@ offset_right = -253.158
 offset_bottom = -488.789
 texture = SubResource("AtlasTexture_ntcac")
 
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.67, 0.67)
+
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -53.0
-offset_top = -461.0
-offset_right = 296.0
-offset_bottom = -175.0
+offset_left = 25.3731
+offset_top = -528.358
+offset_right = 374.373
+offset_bottom = -242.358
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 34.0
-offset_top = -384.0
-offset_right = 312.0
-offset_bottom = -303.0
+offset_left = 112.373
+offset_top = -451.358
+offset_right = 390.373
+offset_bottom = -370.358
 text = "Sarah thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

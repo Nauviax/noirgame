@@ -50,17 +50,20 @@ offset_right = -255.762
 offset_bottom = -483.286
 texture = SubResource("AtlasTexture_5abmr")
 
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.67, 0.67)
+
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -65.0
-offset_top = -529.0
-offset_right = 295.0
-offset_bottom = -207.0
+offset_left = 19.403
+offset_top = -617.91
+offset_right = 379.403
+offset_bottom = -295.91
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 15.0
-offset_top = -440.0
-offset_right = 293.0
-offset_bottom = -359.0
+offset_left = 99.403
+offset_top = -528.91
+offset_right = 377.403
+offset_bottom = -447.91
 text = "Alvin thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

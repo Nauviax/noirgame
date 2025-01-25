@@ -50,17 +50,20 @@ offset_right = -219.789
 offset_bottom = -479.053
 texture = SubResource("AtlasTexture_n7oah")
 
+[node name="ThoughtBubble" parent="." index="2"]
+scale = Vector2(0.74, 0.74)
+
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = -14.0
-offset_top = -465.0
-offset_right = 297.0
-offset_bottom = -183.0
+offset_left = 20.2703
+offset_top = -521.622
+offset_right = 331.27
+offset_bottom = -239.622
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 56.0
-offset_top = -387.0
-offset_right = 285.0
-offset_bottom = -334.0
+offset_left = 90.2703
+offset_top = -443.622
+offset_right = 319.27
+offset_bottom = -390.622
 text = "Kimberly thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
