@@ -60,8 +60,9 @@ func start_game() -> void:
 func show_location(new_location: Location) -> void:
 	if current_location: # Shouldn't ever be false.
 		remove_child(current_location)
+	new_location.begin_fade_in()
+	add_child(new_location)
 	current_location = new_location
-	add_child(current_location)
 	if not Engine.is_editor_hint(): # Don't show title in editor.
 		var title: LocationTitle = location_title.instantiate()
 		title.set_text(new_location.location_name)
