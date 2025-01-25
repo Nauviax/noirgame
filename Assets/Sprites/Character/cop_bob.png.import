@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6fkriswprgov"
-path="res://.godot/imported/copSketch.png-2bbae64889455b14360380c679cd4389.ctex"
+uid="uid://8ee5iq0hvlgv"
+path="res://.godot/imported/cop_bob.png-f27a2e33541ed6f59b5118fdbd6d4035.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Character/copSketch.png"
-dest_files=["res://.godot/imported/copSketch.png-2bbae64889455b14360380c679cd4389.ctex"]
+source_file="res://assets/sprites/Character/cop_bob.png"
+dest_files=["res://.godot/imported/cop_bob.png-f27a2e33541ed6f59b5118fdbd6d4035.ctex"]
 
 [params]
 

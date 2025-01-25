@@ -71,6 +71,26 @@ text = "This is a thought bubble"
 wait_time = 5.0
 autostart = true
 
+[node name="NamePanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="NamePanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_kujgu")
+
+[node name="Label" type="Label" parent="NamePanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Name"
+
 [connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
+[connection signal="mouse_entered" from="ClickArea" to="." method="_on_click_area_mouse_entered"]
 [connection signal="mouse_exited" from="ClickArea" to="." method="_on_click_area_mouse_exited"]
 [connection signal="timeout" from="ThoughtBubbleTimer" to="." method="_on_thought_bubble_timer_timeout"]

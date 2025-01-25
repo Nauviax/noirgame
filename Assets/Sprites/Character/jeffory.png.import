@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t533cqn8c61i"
-path="res://.godot/imported/charSketch8.png-0eb8e18c962887e5d857a435e623a2a1.ctex"
+uid="uid://b64guixi7c2i8"
+path="res://.godot/imported/jeffory.png-8ef74b34fb2915fb6a64331c8acc19ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Character/charSketch8.png"
-dest_files=["res://.godot/imported/charSketch8.png-0eb8e18c962887e5d857a435e623a2a1.ctex"]
+source_file="res://assets/sprites/Character/jeffory.png"
+dest_files=["res://.godot/imported/jeffory.png-8ef74b34fb2915fb6a64331c8acc19ae.ctex"]
 
 [params]
 

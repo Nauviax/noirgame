@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b53j60mfgpb5r"
-path="res://.godot/imported/charSketch2.png-30c588ee7b5adc33c237d2c5006c1d3a.ctex"
+uid="uid://dunbikeai5vfp"
+path="res://.godot/imported/gordon.png-cd82d1dfcaf99e2f86421c2817c5aa10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Character/charSketch2.png"
-dest_files=["res://.godot/imported/charSketch2.png-30c588ee7b5adc33c237d2c5006c1d3a.ctex"]
+source_file="res://assets/sprites/Character/gordon.png"
+dest_files=["res://.godot/imported/gordon.png-cd82d1dfcaf99e2f86421c2817c5aa10.ctex"]
 
 [params]
 

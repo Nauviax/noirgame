@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2aybfhhlq210"
-path="res://.godot/imported/charSketch7.png-427724f340568c08ad3747f24596b07d.ctex"
+uid="uid://buinpwwviqd1j"
+path="res://.godot/imported/alvin.png-474c538f309a4c86b3f683f9426588d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Character/charSketch7.png"
-dest_files=["res://.godot/imported/charSketch7.png-427724f340568c08ad3747f24596b07d.ctex"]
+source_file="res://assets/sprites/Character/alvin.png"
+dest_files=["res://.godot/imported/alvin.png-474c538f309a4c86b3f683f9426588d8.ctex"]
 
 [params]
 

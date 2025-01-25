@@ -40,4 +40,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 
 [connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/LocationButton" to="UI/LevelSelectToolbar/LevelSelect/LocationButton" method="_on_pressed"]
-[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@79238" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@79238" method="_on_pressed"]
+[connection signal="pressed" from="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" to="UI/LevelSelectToolbar/LevelSelect/@TextureButton@17252" method="_on_pressed"]

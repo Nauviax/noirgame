@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c13p2q0tjxmtp"
-path="res://.godot/imported/charSketch12.png-82524009ff8106494de6ee6f9cabb52c.ctex"
+uid="uid://b6skgu8rcnkdu"
+path="res://.godot/imported/alison.png-9170c2acf12c66e236f8e58280c0d8bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Character/charSketch12.png"
-dest_files=["res://.godot/imported/charSketch12.png-82524009ff8106494de6ee6f9cabb52c.ctex"]
+source_file="res://assets/sprites/Character/alison.png"
+dest_files=["res://.godot/imported/alison.png-9170c2acf12c66e236f8e58280c0d8bc.ctex"]
 
 [params]
 

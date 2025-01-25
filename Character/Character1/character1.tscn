@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://dglf20iwoa2m6"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_y2oki"]
-[ext_resource type="Texture2D" uid="uid://bn60xm1vcn2pl" path="res://assets/sprites/Temp/police.png" id="2_m4npa"]
+[ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/Character/alison.png" id="2_43rrj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_m4npa")
+"texture": ExtResource("2_43rrj")
 }],
 "loop": true,
 "name": &"default",
@@ -15,13 +15,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
-size = Vector2(266, 284)
+size = Vector2(170, 284)
 
-[node name="Character1" instance=ExtResource("1_y2oki")]
+[node name="Alison" instance=ExtResource("1_y2oki")]
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.999985, -1.00002)
-scale = Vector2(0.30893, 0.324507)
 sprite_frames = SubResource("SpriteFrames_pl3jf")
 
 [node name="SpeechBubble" parent="." index="1"]
@@ -62,5 +61,23 @@ offset_right = 170.0
 offset_bottom = -318.0
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
-position = Vector2(2, -1)
+position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_2k2wy")
+
+[node name="NamePanel" parent="." index="5"]
+visible = false
+
+[node name="TextureRect" parent="NamePanel" index="0"]
+offset_left = 91.0
+offset_top = -130.0
+offset_right = 451.0
+offset_bottom = 230.0
+scale = Vector2(0.33, 0.33)
+
+[node name="Label" parent="NamePanel" index="1"]
+offset_left = 124.0
+offset_top = -85.0
+offset_right = 172.0
+offset_bottom = -62.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Alison"
