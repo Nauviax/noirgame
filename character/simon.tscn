@@ -28,26 +28,27 @@ size = Vector2(151.14, 282.987)
 sprite_frames = SubResource("SpriteFrames_6tonr")
 
 [node name="SpeechBubble" parent="." index="1"]
+visible = true
 scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -370.703
-offset_top = -518.838
-offset_right = -76.7027
-offset_bottom = -265.838
+offset_left = -440.541
+offset_top = -517.568
+offset_right = -146.54
+offset_bottom = -264.568
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -299.703
-offset_top = -440.838
-offset_right = -141.703
-offset_bottom = -406.838
+offset_left = -382.432
+offset_top = -448.649
+offset_right = -224.432
+offset_bottom = -414.649
 text = "Simon talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -402.703
-offset_top = -587.838
-offset_right = -198.703
-offset_bottom = -510.838
+offset_left = -431.0
+offset_top = -562.0
+offset_right = -250.0
+offset_bottom = -496.0
 texture = SubResource("AtlasTexture_mel2f")
 
 [node name="ThoughtBubble" parent="." index="2"]
