@@ -9,7 +9,7 @@ func _ready() -> void:
 func _on_click_area_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if !thought_bubble.visible and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		thought_bubble.visible = true
-		$ClickSound.play()
+		$BubbleSound.play()
 
 
 func _on_click_area_mouse_exited() -> void:
