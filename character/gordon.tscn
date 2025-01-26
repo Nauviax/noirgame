@@ -46,10 +46,10 @@ offset_right = -215.294
 offset_bottom = -289.824
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -435.294
-offset_top = -475.824
-offset_right = -262.294
-offset_bottom = -441.824
+offset_left = -434.0
+offset_top = -516.0
+offset_right = -246.0
+offset_bottom = -366.0
 text = "Gordon talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
@@ -69,10 +69,10 @@ offset_right = 365.634
 offset_bottom = -235.746
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 92.6338
-offset_top = -477.746
-offset_right = 370.634
-offset_bottom = -396.746
+offset_left = 80.0
+offset_top = -504.0
+offset_right = 323.0
+offset_bottom = -418.0
 text = "Gordon thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

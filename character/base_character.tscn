@@ -102,7 +102,6 @@ script = ExtResource("1_no52m")
 scale = Vector2(0.7, 0.7)
 
 [node name="SpeechBubble" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 272.0
@@ -120,15 +119,16 @@ texture = ExtResource("2_8imf7")
 
 [node name="Label" type="Label" parent="SpeechBubble"]
 layout_mode = 0
-offset_left = -328.0
-offset_top = -299.0
-offset_right = -194.0
-offset_bottom = -265.0
+offset_left = -314.0
+offset_top = -309.0
+offset_right = -163.0
+offset_bottom = -219.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_i6wwd")
 theme_override_font_sizes/font_size = 16
 text = "This is label"
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="NameTag" type="TextureRect" parent="SpeechBubble"]
 layout_mode = 0
@@ -138,7 +138,6 @@ offset_right = 88.0
 offset_bottom = 329.0
 
 [node name="ThoughtBubble" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = -184.0
@@ -156,14 +155,15 @@ texture = ExtResource("4_wmcvp")
 
 [node name="Label" type="Label" parent="ThoughtBubble"]
 layout_mode = 0
-offset_left = 102.0
-offset_top = -326.0
-offset_right = 195.0
-offset_bottom = -292.0
+offset_left = 83.0
+offset_top = -334.0
+offset_right = 225.0
+offset_bottom = -262.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_i6wwd")
 theme_override_font_sizes/font_size = 16
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="ClickArea" type="Area2D" parent="."]
 

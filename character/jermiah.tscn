@@ -44,10 +44,10 @@ offset_right = -244.846
 offset_bottom = -423.385
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -482.846
-offset_top = -638.385
-offset_right = -307.846
-offset_bottom = -604.385
+offset_left = -537.0
+offset_top = -731.0
+offset_right = -277.0
+offset_bottom = -519.0
 text = "Jermiah talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
@@ -67,10 +67,10 @@ offset_right = 437.419
 offset_bottom = -311.871
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 164.707
-offset_top = -542.94
-offset_right = 442.707
-offset_bottom = -461.94
+offset_left = 135.0
+offset_top = -587.0
+offset_right = 391.0
+offset_bottom = -490.0
 text = "Jermiah thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
