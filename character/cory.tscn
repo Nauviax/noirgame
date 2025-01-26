@@ -44,10 +44,10 @@ offset_right = -121.667
 offset_bottom = -297.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -328.667
-offset_top = -498.0
-offset_right = -190.667
-offset_bottom = -464.0
+offset_left = -360.0
+offset_top = -537.0
+offset_right = -147.0
+offset_bottom = -371.0
 text = "Cory talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
@@ -67,10 +67,10 @@ offset_right = 349.041
 offset_bottom = -262.932
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 64.0411
-offset_top = -504.932
-offset_right = 342.041
-offset_bottom = -423.932
+offset_left = 59.0
+offset_top = -536.0
+offset_right = 297.0
+offset_bottom = -440.0
 text = "Cory thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

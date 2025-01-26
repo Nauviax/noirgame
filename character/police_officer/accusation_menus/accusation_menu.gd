@@ -18,8 +18,8 @@ func _ready() -> void:
 		var text := optionTexts[i]
 		var texture := optionTextures[i]
 		var new_button : AccusationButton = accusationButton.instantiate()
-		new_button.text = text
-		new_button.icon = texture
+		new_button.set_button_text(text)
+		new_button.set_texture(texture)
 		$HBoxContainer.add_child(new_button)
 		new_button.accused.connect(_on_accusation_button_pressed)
 
