@@ -21,4 +21,4 @@ scale = Vector2(1.68, 1.68)
 position = Vector2(289, 997)
 
 [node name="BaseWeapon2" parent="." index="4" instance=ExtResource("5_4ox47")]
-position = Vector2(628, 999)
+position = Vector2(1588, 999)
