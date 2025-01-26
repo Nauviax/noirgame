@@ -14,4 +14,4 @@ func set_button_text(new_text: String) -> void:
 
 
 func _on_pressed() -> void:
-	accused.emit(text)
+	accused.emit($Label.text)
