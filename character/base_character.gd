@@ -29,6 +29,7 @@ func _on_click_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: 
 		thought_bubble.visible = false
 		thought_bubble_timer.stop()
 		speech_bubble.visible = true
+		$ClickSound.play()
 
 
 func _on_click_area_mouse_exited() -> void:
@@ -49,6 +50,7 @@ func show_thought_bubble():
 	thought_bubble.visible = true
 	animation_player.play("fade_in_slide_up")
 	animation_player.connect("animation_finished", _on_fade_in_finished)
+	$BubbleSound.play()
 	
 func _on_fade_in_finished(anim_name):
 	if anim_name == "fade_in_slide_up":
