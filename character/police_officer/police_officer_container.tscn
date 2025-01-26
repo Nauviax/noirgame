@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://byb1isfrym7sm"]
+[gd_scene load_steps=29 format=3 uid="uid://byb1isfrym7sm"]
 
 [ext_resource type="PackedScene" uid="uid://5v7o53hnhl1g" path="res://character/police_officer/accusation_menus/accusation_menu.tscn" id="1_fw6p8"]
 [ext_resource type="Shader" path="res://character/police_officer/adjust_brightness.gdshader" id="1_ocuq5"]
@@ -9,22 +9,43 @@
 [ext_resource type="Texture2D" uid="uid://fegmt02eomc7" path="res://assets/sprites/character/barbra.png" id="5_f6i3y"]
 [ext_resource type="Texture2D" uid="uid://d71qn1pyta47" path="res://assets/sprites/character/cory.png" id="6_2son1"]
 [ext_resource type="Texture2D" uid="uid://dunbikeai5vfp" path="res://assets/sprites/character/gordon.png" id="7_73no8"]
-[ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/character/jeffory.png" id="8_7aw8v"]
+[ext_resource type="Texture2D" uid="uid://4bgrgrh6w6cq" path="res://assets/sprites/character/jeffory.png" id="8_7aw8v"]
 [ext_resource type="Texture2D" uid="uid://cbk12t4o4brwl" path="res://assets/sprites/character/jermiah.png" id="9_tboyg"]
 [ext_resource type="Texture2D" uid="uid://couuibjenlfdu" path="res://assets/sprites/character/kimberly.png" id="10_pfvml"]
 [ext_resource type="Texture2D" uid="uid://6jryx0oi6a5k" path="res://assets/sprites/character/lisa.png" id="11_pxvcn"]
 [ext_resource type="Texture2D" uid="uid://cb6g6plihikg7" path="res://assets/sprites/character/sarah.png" id="12_rgxng"]
 [ext_resource type="Texture2D" uid="uid://c5mmo2nbne3xv" path="res://assets/sprites/character/simon.png" id="13_kllca"]
 [ext_resource type="Texture2D" uid="uid://dunl6f8k15e2i" path="res://assets/sprites/character/susan.png" id="14_r4ktc"]
-[ext_resource type="Texture2D" uid="uid://bbmyacmxyi05t" path="res://icon.svg" id="15_q62oa"]
 [ext_resource type="Texture2D" uid="uid://dtv0b1veua863" path="res://assets/sprites/backgrounds/lounge.png" id="16_rg5dq"]
 [ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assets/sprites/backgrounds/boilerroom.png" id="17_02l2g"]
+[ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="17_c6afr"]
 [ext_resource type="Texture2D" uid="uid://ddmyn36w8a0t6" path="res://assets/sprites/backgrounds/garden.png" id="18_2w2re"]
+[ext_resource type="Texture2D" uid="uid://ct0dtp55ergun" path="res://assets/sprites/weapon/screwdriver.png" id="18_c4ljg"]
 [ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="19_fr80e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mdfv1"]
 shader = ExtResource("1_ocuq5")
 shader_parameter/brightness = -0.25
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpkye"]
+atlas = ExtResource("17_c6afr")
+region = Rect2(98.317, 93.6891, 665.182, 155.164)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6df3"]
+atlas = ExtResource("17_c6afr")
+region = Rect2(212.483, 369.526, 301.004, 315.27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncj6p"]
+atlas = ExtResource("17_c6afr")
+region = Rect2(911.496, 89.9209, 178.32, 266.767)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rby6"]
+atlas = ExtResource("17_c6afr")
+region = Rect2(1688.97, 252.549, 171.187, 693.308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3w4cs"]
+atlas = ExtResource("18_c4ljg")
+region = Rect2(373.684, 336.716, 924.41, 621.98)
 
 [node name="PoliceOfficerContainer" type="Node2D"]
 
@@ -57,8 +78,8 @@ optionTextures = Array[Texture2D]([ExtResource("3_i2w8b"), ExtResource("4_3mchr"
 
 [node name="WeaponAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
-optionTexts = Array[String](["Knife", "Gun", "Bubble Blower", "Pipe", "Wrench"])
-optionTextures = Array[Texture2D]([ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa"), ExtResource("15_q62oa")])
+optionTexts = Array[String](["Dagger", "Tyre", "Bubble", "Sword", "Screwdriver"])
+optionTextures = Array[Texture2D]([SubResource("AtlasTexture_dpkye"), SubResource("AtlasTexture_v6df3"), SubResource("AtlasTexture_ncj6p"), SubResource("AtlasTexture_6rby6"), SubResource("AtlasTexture_3w4cs")])
 
 [node name="LocationAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
