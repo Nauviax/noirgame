@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7dg575olj4f7"]
+
+[ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_6t66w"]
+[ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_ql8nu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vtu2c"]
+radius = 83.7257
+
+[node name="BaseWeapon" instance=ExtResource("1_6t66w")]
+
+[node name="WeaponSprite" parent="." index="0"]
+texture = ExtResource("2_ql8nu")
+region_enabled = true
+region_rect = Rect2(220.034, 386.614, 290.509, 292.408)
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_vtu2c")

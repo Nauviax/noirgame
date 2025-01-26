@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt4vxm48ns83g"]
+
+[ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_omka8"]
+[ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_b3vuc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bscw6"]
+
+[node name="BaseWeapon" instance=ExtResource("1_omka8")]
+
+[node name="WeaponSprite" parent="." index="0"]
+texture = ExtResource("2_b3vuc")
+region_enabled = true
+region_rect = Rect2(101.088, 98.948, 665.221, 137.296)
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+scale = Vector2(19.76, 3.36)
+shape = SubResource("RectangleShape2D_bscw6")

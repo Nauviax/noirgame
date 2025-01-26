@@ -11,6 +11,7 @@ region = Rect2(224, 59.75, 138, 53.5)
 [node name="BaseWeapon" type="Node2D"]
 
 [node name="WeaponSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
 
 [node name="ClickArea" type="Area2D" parent="."]
 
