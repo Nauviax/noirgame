@@ -3,6 +3,9 @@ class_name FinalVerdict
 extends TextureRect
 
 
+signal closed()
+
+
 @export var _fail_background : Texture2D
 @export var _mislead_background : Texture2D
 @export var _good_background: Texture2D
@@ -18,4 +21,5 @@ func set_verdict(verdict: int):
 
 
 func _on_close_button_pressed() -> void:
-	get_tree().quit()
+	closed.emit()
+	visible = false

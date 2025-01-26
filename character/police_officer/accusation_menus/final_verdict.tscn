@@ -24,6 +24,6 @@ offset_top = 861.0
 offset_right = 1783.0
 offset_bottom = 957.0
 theme_override_font_sizes/font_size = 64
-text = "Exit Game"
+text = "Return to Game"
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

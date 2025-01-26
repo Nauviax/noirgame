@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7dg575olj4f7"]
+
+[ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_6t66w"]
+[ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_ql8nu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jir1v"]
+
+[node name="Tyre" instance=ExtResource("1_6t66w")]
+
+[node name="WeaponSprite" parent="." index="0"]
+position = Vector2(1, 0)
+skew = 0.649262
+texture = ExtResource("2_ql8nu")
+region_enabled = true
+region_rect = Rect2(220.034, 386.614, 290.509, 292.408)
+
+[node name="ClickArea" parent="." index="1"]
+scale = Vector2(-2.71, 1)
+
+[node name="CollisionShape2D" parent="ClickArea" index="0"]
+scale = Vector2(3.05094, 6.81184)
+skew = -0.331613
+shape = SubResource("CircleShape2D_jir1v")

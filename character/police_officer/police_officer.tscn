@@ -19,5 +19,3 @@ texture = ExtResource("2_orjoo")
 shape = SubResource("CapsuleShape2D_pc3a0")
 
 [connection signal="input_event" from="Area2D" to="." method="_on_input_event"]
-[connection signal="mouse_entered" from="Area2D" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Area2D" to="." method="_on_mouse_exited"]

@@ -1,14 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://d30iq8mn4iy6w"]
+[gd_scene load_steps=7 format=3 uid="uid://d30iq8mn4iy6w"]
 
-[ext_resource type="Texture2D" uid="uid://bvlej2t4bsdwy" path="res://assets/sprites/bubble/thought bubble.png" id="1_vo7ng"]
+[ext_resource type="Texture2D" uid="uid://bmwv56ywf8bmo" path="res://assets/sprites/bubble/thought-bubble.png" id="1_683aa"]
+[ext_resource type="Script" path="res://weapon/base_weapon.gd" id="1_fa5f7"]
+[ext_resource type="FontFile" uid="uid://0stppgtsii5n" path="res://assets/fonts/noirfont/Noir_regular.otf" id="2_fi101"]
+[ext_resource type="Texture2D" uid="uid://bpps2xjvqeanp" path="res://assets/sprites/character/nametag/villinaVictorTag.png" id="2_p5hmr"]
+[ext_resource type="AudioStream" uid="uid://hdjmstdmpn4v" path="res://assets/audio/63531__florian_reinke__click1.wav" id="5_dhhlh"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5m8ij"]
-atlas = ExtResource("1_vo7ng")
-region = Rect2(717.488, 1.585, 80.5255, 89.177)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vymt3"]
+atlas = ExtResource("2_p5hmr")
+region = Rect2(224, 59.75, 138, 53.5)
 
 [node name="BaseWeapon" type="Node2D"]
+script = ExtResource("1_fa5f7")
 
 [node name="WeaponSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
 
 [node name="ClickArea" type="Area2D" parent="."]
 
@@ -17,23 +23,43 @@ region = Rect2(717.488, 1.585, 80.5255, 89.177)
 [node name="ThoughtBubble" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -40.0
-offset_top = -140.0
-offset_right = -40.0
-offset_bottom = -140.0
+offset_left = -35.0
+offset_top = -99.0
+offset_right = -35.0
+offset_bottom = -99.0
 
 [node name="TextureRect" type="TextureRect" parent="ThoughtBubble"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = SubResource("AtlasTexture_5m8ij")
+offset_left = -64.0
+offset_top = -170.0
+offset_right = 128.0
+offset_bottom = 38.0
+texture = ExtResource("1_683aa")
 
 [node name="Label" type="Label" parent="ThoughtBubble"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 4.0
+offset_top = -129.0
+offset_right = 44.0
+offset_bottom = -106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fi101")
+theme_override_font_sizes/font_size = 16
+text = "weapon desc"
+horizontal_alignment = 1
 
 [node name="ProtagonistNameTag" type="TextureRect" parent="ThoughtBubble"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -39.0
+offset_top = -197.0
+offset_right = 99.0
+offset_bottom = -144.0
+scale = Vector2(0.63, 0.63)
+texture = SubResource("AtlasTexture_vymt3")
+
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_dhhlh")
+volume_db = 10.0
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]
+[connection signal="mouse_exited" from="ClickArea" to="." method="_on_click_area_mouse_exited"]

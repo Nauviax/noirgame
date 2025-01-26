@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7witf3tlm7tb"]
+[gd_scene load_steps=8 format=3 uid="uid://c7witf3tlm7tb"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_oshgo"]
 [ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="3_n6cbb"]
 [ext_resource type="PackedScene" uid="uid://4jtunr04q51l" path="res://character/jeffory.tscn" id="5_sl33o"]
 [ext_resource type="PackedScene" uid="uid://cweq7wnrbj2un" path="res://character/alvin.tscn" id="6_d74n6"]
+[ext_resource type="PackedScene" uid="uid://dt4vxm48ns83g" path="res://weapon/dagger.tscn" id="7_5oy5n"]
 [ext_resource type="PackedScene" uid="uid://tf5ng5t1bhtu" path="res://character/susan.tscn" id="7_cpm5m"]
 [ext_resource type="PackedScene" uid="uid://du7f63kl1of7d" path="res://character/lisa.tscn" id="8_jcqtm"]
 
@@ -31,3 +32,6 @@ scale = Vector2(1.32, 1.32)
 [node name="Lisa" parent="Characters" index="3" instance=ExtResource("8_jcqtm")]
 position = Vector2(1681, 523)
 scale = Vector2(1.09, 1.09)
+
+[node name="BaseWeapon" parent="Characters" index="4" instance=ExtResource("7_5oy5n")]
+position = Vector2(1425, 396)
