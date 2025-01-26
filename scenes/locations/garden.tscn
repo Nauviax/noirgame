@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://e2hoc7aqbul6" path="res://character/sarah.tscn" id="7_tskl2"]
 [ext_resource type="PackedScene" uid="uid://cddswvwwhgogd" path="res://weapon/bubble.tscn" id="8_pxj38"]
 
-[node name="BaseLocation2" instance=ExtResource("1_nbo21")]
+[node name="BaseLocation3" instance=ExtResource("1_nbo21")]
 location_name = "Garden"
 location_icon = ExtResource("2_guqc4")
 location_icon_selected = ExtResource("3_1es2e")

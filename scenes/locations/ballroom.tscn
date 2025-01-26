@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://tf5ng5t1bhtu" path="res://character/susan.tscn" id="7_cpm5m"]
 [ext_resource type="PackedScene" uid="uid://du7f63kl1of7d" path="res://character/lisa.tscn" id="8_jcqtm"]
 
-[node name="BaseLocation2" instance=ExtResource("1_oshgo")]
+[node name="BaseLocation3" instance=ExtResource("1_oshgo")]
 location_name = "Ballroom"
 location_icon = ExtResource("2_ywfn2")
 location_icon_selected = ExtResource("3_aua5n")

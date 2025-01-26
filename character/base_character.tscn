@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://casoypfdm7e3l"]
+[gd_scene load_steps=12 format=3 uid="uid://casoypfdm7e3l"]
 
 [ext_resource type="Script" path="res://character/base_character.gd" id="1_no52m"]
 [ext_resource type="Texture2D" uid="uid://bmocby5cxoiyd" path="res://assets/sprites/bubble/speech-bubble.png" id="2_8imf7"]
@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://bmwv56ywf8bmo" path="res://assets/sprites/bubble/thought-bubble.png" id="4_wmcvp"]
 [ext_resource type="AudioStream" uid="uid://hdjmstdmpn4v" path="res://assets/audio/63531__florian_reinke__click1.wav" id="5_e85oe"]
 [ext_resource type="AudioStream" uid="uid://ch08nukvnf5w4" path="res://assets/audio/104948__glaneur-de-sons__bubble-9.wav" id="6_jl6rc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_th2k7"]
+font_color = Color(0, 0, 0, 1)
+outline_size = 2
 
 [sub_resource type="Animation" id="Animation_txoud"]
 length = 0.001
@@ -127,6 +131,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_i6wwd")
 theme_override_font_sizes/font_size = 16
 text = "This is label"
+label_settings = SubResource("LabelSettings_th2k7")
 horizontal_alignment = 1
 autowrap_mode = 2
 
