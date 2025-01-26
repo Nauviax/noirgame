@@ -46,14 +46,13 @@ offset_bottom = -142.286
 scale = Vector2(0.74, 0.74)
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = 24.5714
-offset_top = -426.286
-offset_right = 251.571
-offset_bottom = -392.286
+offset_left = 21.0
+offset_top = -454.0
+offset_right = 201.0
+offset_bottom = -309.0
 text = "I am talking"
 
 [node name="ThoughtBubble" parent="." index="2"]
-visible = true
 scale = Vector2(0.69, 0.69)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
@@ -63,10 +62,10 @@ offset_right = 437.478
 offset_bottom = -221.116
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 108.696
-offset_top = -504.348
-offset_right = 386.696
-offset_bottom = -457.348
+offset_left = 109.0
+offset_top = -510.0
+offset_right = 380.0
+offset_bottom = -416.0
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(1, -1)

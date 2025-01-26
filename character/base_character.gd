@@ -17,6 +17,8 @@ var thought_dialogs_length: int
 @onready var thought_bubble_timer_wait_time = thought_bubble_timer.wait_time
 	
 func _ready():
+	speech_bubble.visible = false
+	thought_bubble.visible = false
 	# Randomize a delay between 0 and 5 seconds
 	var random_delay = randf_range(2, 5)
 	thought_bubble_timer.start(random_delay)
