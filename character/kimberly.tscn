@@ -36,39 +36,40 @@ sprite_frames = SubResource("SpriteFrames_qwsjg")
 scale = Vector2(0.76, 0.76)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -380.789
-offset_top = -492.053
-offset_right = -122.789
-offset_bottom = -275.053
+offset_left = -423.684
+offset_top = -535.526
+offset_right = -106.684
+offset_bottom = -257.526
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -334.0
-offset_top = -454.0
-offset_right = -149.0
-offset_bottom = -339.0
+offset_left = -372.368
+offset_top = -486.842
+offset_right = -139.368
+offset_bottom = -329.842
 text = "Kimberly talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
 offset_left = -415.789
-offset_top = -546.053
+offset_top = -564.474
 offset_right = -219.789
-offset_bottom = -479.053
+offset_bottom = -497.474
 texture = SubResource("AtlasTexture_n7oah")
 
 [node name="ThoughtBubble" parent="." index="2"]
 scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = 22.973
-offset_top = -544.595
-offset_right = 333.973
-offset_bottom = -262.595
+offset_left = 110.811
+offset_top = -582.432
+offset_right = 440.811
+offset_bottom = -210.432
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 82.0
-offset_top = -500.0
-offset_right = 291.0
-offset_bottom = -421.0
+offset_left = 169.811
+offset_top = -519.432
+offset_right = 395.811
+offset_bottom = -372.432
+theme_override_font_sizes/font_size = 14
 text = "Kimberly thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

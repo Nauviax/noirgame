@@ -37,11 +37,10 @@ position = Vector2(0.999985, -1.00002)
 sprite_frames = SubResource("SpriteFrames_pl3jf")
 
 [node name="SpeechBubble" parent="." index="1"]
-offset_left = -9.0
-offset_top = 8.0
-offset_right = 31.0
-offset_bottom = 48.0
-scale = Vector2(0.7, 0.7)
+offset_left = -44.0
+offset_top = 81.0
+offset_right = -4.0
+offset_bottom = 121.0
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
 offset_left = -39.4286
@@ -51,11 +50,13 @@ offset_bottom = -142.286
 scale = Vector2(0.74, 0.74)
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = 21.0
-offset_top = -454.0
-offset_right = 201.0
-offset_bottom = -309.0
+offset_left = 3.0
+offset_top = -461.0
+offset_right = 203.0
+offset_bottom = -305.0
+theme_override_font_sizes/font_size = 12
 text = "I am talking"
+label_settings = null
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
 offset_left = -3.0
@@ -74,10 +75,10 @@ offset_right = 437.478
 offset_bottom = -221.116
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 109.0
-offset_top = -510.0
-offset_right = 380.0
-offset_bottom = -416.0
+offset_left = 112.0
+offset_top = -501.0
+offset_right = 383.0
+offset_bottom = -385.0
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(1, -1)

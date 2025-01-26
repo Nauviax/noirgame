@@ -39,17 +39,19 @@ sprite_frames = SubResource("SpriteFrames_xfc72")
 scale = Vector2(0.84, 0.84)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -370.762
-offset_top = -503.286
-offset_right = -136.762
-offset_bottom = -269.286
+offset_left = -401.0
+offset_top = -503.0
+offset_right = -137.0
+offset_bottom = -251.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -332.0
-offset_top = -464.0
+offset_left = -351.0
+offset_top = -468.0
 offset_right = -157.0
-offset_bottom = -330.0
+offset_bottom = -311.0
+theme_override_font_sizes/font_size = 12
 text = "Alvin talking"
+label_settings = null
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
 offset_left = -395.238
@@ -62,16 +64,16 @@ texture = SubResource("AtlasTexture_hif58")
 scale = Vector2(0.67, 0.67)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = 19.403
-offset_top = -617.91
-offset_right = 379.403
-offset_bottom = -295.91
+offset_left = 25.0
+offset_top = -648.0
+offset_right = 385.0
+offset_bottom = -290.0
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 84.0
-offset_top = -566.0
-offset_right = 334.0
-offset_bottom = -475.0
+offset_left = 85.0
+offset_top = -582.0
+offset_right = 351.0
+offset_bottom = -457.0
 text = "Alvin thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

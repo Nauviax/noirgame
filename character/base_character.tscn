@@ -160,10 +160,10 @@ texture = ExtResource("4_wmcvp")
 
 [node name="Label" type="Label" parent="ThoughtBubble"]
 layout_mode = 0
-offset_left = 83.0
-offset_top = -334.0
-offset_right = 225.0
-offset_bottom = -262.0
+offset_left = 84.0
+offset_top = -318.0
+offset_right = 226.0
+offset_bottom = -246.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_i6wwd")
 theme_override_font_sizes/font_size = 16
