@@ -4,12 +4,17 @@
 [ext_resource type="Script" path="res://ui/location_selector/location_button.gd" id="2_s3pem"]
 
 [node name="LocationButton" type="TextureButton"]
+custom_minimum_size = Vector2(128, 128)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1792.0
+offset_bottom = -952.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_6hw03")
+ignore_texture_size = true
+stretch_mode = 0
 script = ExtResource("2_s3pem")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

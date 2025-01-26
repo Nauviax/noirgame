@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cls05x38txqwe"
-path="res://.godot/imported/basic-toolbar.png-41907ebd732c3d59223e01cf540ad412.ctex"
+uid="uid://dvgd8u2st7rk1"
+path="res://.godot/imported/ballroomicon_white.png-9e9be6fc8c03f3ec498c7856ee3463b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/basic-toolbar.png"
-dest_files=["res://.godot/imported/basic-toolbar.png-41907ebd732c3d59223e01cf540ad412.ctex"]
+source_file="res://assets/sprites/ui/ballroomicon_white.png"
+dest_files=["res://.godot/imported/ballroomicon_white.png-9e9be6fc8c03f3ec498c7856ee3463b0.ctex"]
 
 [params]
 
