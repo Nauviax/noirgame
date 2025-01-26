@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ci5d8uk1nvqfg"]
+[gd_scene load_steps=4 format=3 uid="uid://bv1of6h724oem"]
 
 [ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_oybk4"]
 [ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_ac7os"]
@@ -17,3 +17,6 @@ region_rect = Rect2(1691.82, 251.122, 165.481, 694.734)
 rotation = -0.170646
 scale = Vector2(20.3364, 3.72)
 shape = SubResource("RectangleShape2D_kwm7t")
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "A very sharp sword. It's clearly been well cared for."

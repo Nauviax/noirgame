@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7dg575olj4f7"]
+[gd_scene load_steps=4 format=3 uid="uid://j3ck3aidcg05"]
 
 [ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_6t66w"]
 [ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_ql8nu"]
@@ -21,3 +21,6 @@ scale = Vector2(-2.71, 1)
 scale = Vector2(3.05094, 6.81184)
 skew = -0.331613
 shape = SubResource("CircleShape2D_jir1v")
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "A tyre that's been left on the ground. There are multiple others scattered around the garden."

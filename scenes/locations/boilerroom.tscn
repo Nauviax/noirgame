@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bowy73bmky1gr" path="res://assets/sprites/ui/boilericon_black.png" id="2_ting5"]
 [ext_resource type="Texture2D" uid="uid://66w4x3huo6bw" path="res://assets/sprites/backgrounds/boilerroom.png" id="3_soxlh"]
 [ext_resource type="Texture2D" uid="uid://chrwb33q4rqtv" path="res://assets/sprites/ui/boilericon_white.png" id="3_y64kg"]
-[ext_resource type="PackedScene" path="res://weapon/screwdriver.tscn" id="4_3ck7p"]
+[ext_resource type="PackedScene" uid="uid://byg722onbo0hv" path="res://weapon/screwdriver.tscn" id="4_3ck7p"]
 [ext_resource type="PackedScene" uid="uid://cjhna6ghccfmf" path="res://character/gordon.tscn" id="4_abiu4"]
-[ext_resource type="PackedScene" path="res://weapon/sword.tscn" id="5_4ox47"]
+[ext_resource type="PackedScene" uid="uid://bv1of6h724oem" path="res://weapon/sword.tscn" id="5_4ox47"]
 
 [node name="BaseLocation2" instance=ExtResource("1_gxxq4")]
 location_name = "Boiler Room"

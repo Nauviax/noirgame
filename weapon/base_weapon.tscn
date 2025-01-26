@@ -1,10 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://d30iq8mn4iy6w"]
+[gd_scene load_steps=8 format=3 uid="uid://d30iq8mn4iy6w"]
 
 [ext_resource type="Texture2D" uid="uid://bmwv56ywf8bmo" path="res://assets/sprites/bubble/thought-bubble.png" id="1_683aa"]
 [ext_resource type="Script" path="res://weapon/base_weapon.gd" id="1_fa5f7"]
 [ext_resource type="FontFile" uid="uid://0stppgtsii5n" path="res://assets/fonts/noirfont/Noir_regular.otf" id="2_fi101"]
 [ext_resource type="Texture2D" uid="uid://bpps2xjvqeanp" path="res://assets/sprites/character/nametag/villinaVictorTag.png" id="2_p5hmr"]
 [ext_resource type="AudioStream" uid="uid://hdjmstdmpn4v" path="res://assets/audio/63531__florian_reinke__click1.wav" id="5_dhhlh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k1man"]
+font_size = 13
+font_color = Color(0.00820202, 0.00820202, 0.00820202, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vymt3"]
 atlas = ExtResource("2_p5hmr")
@@ -38,15 +42,17 @@ texture = ExtResource("1_683aa")
 
 [node name="Label" type="Label" parent="ThoughtBubble"]
 layout_mode = 0
-offset_left = 4.0
-offset_top = -129.0
-offset_right = 44.0
-offset_bottom = -106.0
+offset_left = -33.0
+offset_top = -141.0
+offset_right = 106.0
+offset_bottom = -75.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_fi101")
 theme_override_font_sizes/font_size = 16
 text = "weapon desc"
+label_settings = SubResource("LabelSettings_k1man")
 horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="ProtagonistNameTag" type="TextureRect" parent="ThoughtBubble"]
 layout_mode = 0
