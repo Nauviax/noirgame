@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4bgrgrh6w6cq"
-path="res://.godot/imported/jeffory.png-8133e1461d522b0054bf4f66da9b9410.ctex"
+uid="uid://bmwv56ywf8bmo"
+path="res://.godot/imported/thought-bubble.png-9cd09e4e87b12ba616c96f02336ab034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/character/jeffory.png"
-dest_files=["res://.godot/imported/jeffory.png-8133e1461d522b0054bf4f66da9b9410.ctex"]
+source_file="res://assets/sprites/bubble/thought-bubble.png"
+dest_files=["res://.godot/imported/thought-bubble.png-9cd09e4e87b12ba616c96f02336ab034.ctex"]
 
 [params]
 

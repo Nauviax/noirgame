@@ -31,23 +31,23 @@ sprite_frames = SubResource("SpriteFrames_6cs3t")
 scale = Vector2(0.67, 0.67)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -412.298
-offset_top = -604.149
-offset_right = -84.2985
-offset_bottom = -300.149
+offset_left = -464.0
+offset_top = -561.0
+offset_right = -194.0
+offset_bottom = -320.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -322.298
-offset_top = -515.149
-offset_right = -161.298
-offset_bottom = -477.149
+offset_left = -428.358
+offset_top = -497.015
+offset_right = -267.358
+offset_bottom = -459.015
 text = "Susan talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -440.298
-offset_top = -670.149
-offset_right = -245.298
-offset_bottom = -589.149
+offset_left = -483.582
+offset_top = -597.015
+offset_right = -320.582
+offset_bottom = -541.015
 texture = SubResource("AtlasTexture_debmv")
 
 [node name="ThoughtBubble" parent="." index="2"]

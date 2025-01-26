@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://4jtunr04q51l"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_d62y4"]
-[ext_resource type="Texture2D" uid="uid://b64guixi7c2i8" path="res://assets/sprites/character/jeffory.png" id="2_ytbik"]
+[ext_resource type="Texture2D" uid="uid://4bgrgrh6w6cq" path="res://assets/sprites/character/jeffory.png" id="2_ytbik"]
 [ext_resource type="Texture2D" uid="uid://e0kjdqow55ku" path="res://assets/sprites/character/nametag/jefforyNameTag.png" id="3_6tstn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fptk5"]
@@ -31,23 +31,23 @@ sprite_frames = SubResource("SpriteFrames_fptk5")
 scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -392.676
-offset_top = -527.027
-offset_right = -149.676
-offset_bottom = -297.027
+offset_left = -449.432
+offset_top = -525.676
+offset_right = -206.432
+offset_bottom = -295.676
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -348.676
-offset_top = -455.027
-offset_right = -186.676
-offset_bottom = -421.027
+offset_left = -405.432
+offset_top = -453.676
+offset_right = -243.432
+offset_bottom = -419.676
 text = "Jeffory talking"
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -425.676
-offset_top = -577.027
-offset_right = -262.676
-offset_bottom = -515.027
+offset_left = -482.432
+offset_top = -575.676
+offset_right = -319.432
+offset_bottom = -513.676
 texture = SubResource("AtlasTexture_mdq2t")
 
 [node name="ThoughtBubble" parent="." index="2"]
