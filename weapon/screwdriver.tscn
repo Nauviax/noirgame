@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://s5pa2odihoqw"]
+[gd_scene load_steps=4 format=3 uid="uid://byg722onbo0hv"]
 
 [ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_c2ewx"]
 [ext_resource type="Texture2D" uid="uid://ct0dtp55ergun" path="res://assets/sprites/weapon/screwdriver.png" id="2_ft4nm"]
@@ -18,3 +18,6 @@ region_rect = Rect2(392.581, 356.716, 918.704, 609.141)
 position = Vector2(-1, -3)
 rotation = -0.606396
 shape = SubResource("RectangleShape2D_8ylei")
+
+[node name="Label" parent="ThoughtBubble" index="1"]
+text = "A screwdriver. It's labeled \"Barbra\"."

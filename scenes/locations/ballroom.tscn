@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://24njhqsukt84" path="res://assets/sprites/backgrounds/ballroom.png" id="3_n6cbb"]
 [ext_resource type="PackedScene" uid="uid://4jtunr04q51l" path="res://character/jeffory.tscn" id="5_sl33o"]
 [ext_resource type="PackedScene" uid="uid://cweq7wnrbj2un" path="res://character/alvin.tscn" id="6_d74n6"]
-[ext_resource type="PackedScene" path="res://weapon/dagger.tscn" id="7_5oy5n"]
+[ext_resource type="PackedScene" uid="uid://figfwd1cir16" path="res://weapon/dagger.tscn" id="7_5oy5n"]
 [ext_resource type="PackedScene" uid="uid://tf5ng5t1bhtu" path="res://character/susan.tscn" id="7_cpm5m"]
 [ext_resource type="PackedScene" uid="uid://du7f63kl1of7d" path="res://character/lisa.tscn" id="8_jcqtm"]
 
