@@ -72,5 +72,6 @@ shape = SubResource("RectangleShape2D_siqa5")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_4ndcw")
 autoplay = true
+parameters/looping = true
 
 [connection signal="input_event" from="StartScreen/Area2D" to="." method="_on_start_screen_input_event"]
