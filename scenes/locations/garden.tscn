@@ -7,11 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://b2qr85pw3em34" path="res://character/kimberly.tscn" id="4_glg1b"]
 [ext_resource type="PackedScene" uid="uid://bcuaiorejkaob" path="res://character/simon.tscn" id="5_6kwjo"]
 [ext_resource type="PackedScene" uid="uid://daddowoivp8ac" path="res://character/barbra.tscn" id="6_s6q2u"]
-[ext_resource type="PackedScene" uid="uid://j3ck3aidcg05" path="res://weapon/tyre.tscn" id="7_bmub4"]
+[ext_resource type="PackedScene" uid="uid://b7dg575olj4f7" path="res://weapon/tyre.tscn" id="7_bmub4"]
 [ext_resource type="PackedScene" uid="uid://e2hoc7aqbul6" path="res://character/sarah.tscn" id="7_tskl2"]
-[ext_resource type="PackedScene" uid="uid://cxgyk26r0e3da" path="res://weapon/bubble.tscn" id="8_pxj38"]
+[ext_resource type="PackedScene" uid="uid://cddswvwwhgogd" path="res://weapon/bubble.tscn" id="8_pxj38"]
 
-[node name="BaseLocation2" instance=ExtResource("1_nbo21")]
+[node name="BaseLocation3" instance=ExtResource("1_nbo21")]
 location_name = "Garden"
 location_icon = ExtResource("2_guqc4")
 location_icon_selected = ExtResource("3_1es2e")

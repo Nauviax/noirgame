@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cweq7wnrbj2un"]
+[gd_scene load_steps=8 format=3 uid="uid://cweq7wnrbj2un"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_5ujnb"]
 [ext_resource type="Texture2D" uid="uid://buinpwwviqd1j" path="res://assets/sprites/character/alvin.png" id="2_6gku7"]
+[ext_resource type="Texture2D" uid="uid://b3t68crdlpi5d" path="res://assets/sprites/character/nametag/alvinNameTag.png" id="3_h7aaj"]
 [ext_resource type="Texture2D" uid="uid://g23fwqk88i80" path="res://assets/textures/temp/speech-bubble.png" id="3_nmi2a"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xfc72"]
@@ -14,6 +15,10 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hif58"]
+atlas = ExtResource("3_h7aaj")
+region = Rect2(208, 186.75, 120, 51)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc2rb"]
 size = Vector2(147, 362)
@@ -45,6 +50,13 @@ offset_top = -464.0
 offset_right = -157.0
 offset_bottom = -330.0
 text = "Alvin talking"
+
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -395.238
+offset_top = -542.857
+offset_right = -242.238
+offset_bottom = -481.857
+texture = SubResource("AtlasTexture_hif58")
 
 [node name="ThoughtBubble" parent="." index="2"]
 scale = Vector2(0.67, 0.67)
