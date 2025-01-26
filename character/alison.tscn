@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bm3c0ll6rem8i"]
+[gd_scene load_steps=8 format=3 uid="uid://bm3c0ll6rem8i"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_t2oms"]
 [ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="2_75wlj"]
 [ext_resource type="Texture2D" uid="uid://g23fwqk88i80" path="res://assets/textures/temp/speech-bubble.png" id="3_6lyd7"]
+[ext_resource type="Texture2D" uid="uid://c8d6s5encxpw2" path="res://assets/sprites/character/nametag/alisonNameTag.png" id="3_ge2it"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
@@ -14,6 +15,10 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gg7k"]
+atlas = ExtResource("3_ge2it")
+region = Rect2(205.75, 1.07637, 119.285, 50.1008)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
 size = Vector2(170, 284)
@@ -51,6 +56,13 @@ offset_top = -454.0
 offset_right = 201.0
 offset_bottom = -309.0
 text = "I am talking"
+
+[node name="NameTag" parent="SpeechBubble" index="2"]
+offset_left = -3.0
+offset_top = -537.0
+offset_right = 171.0
+offset_bottom = -482.0
+texture = SubResource("AtlasTexture_6gg7k")
 
 [node name="ThoughtBubble" parent="." index="2"]
 scale = Vector2(0.69, 0.69)

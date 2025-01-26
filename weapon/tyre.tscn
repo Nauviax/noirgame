@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://j3ck3aidcg05"]
+[gd_scene load_steps=4 format=3 uid="uid://b7dg575olj4f7"]
 
 [ext_resource type="PackedScene" uid="uid://d30iq8mn4iy6w" path="res://weapon/base_weapon.tscn" id="1_6t66w"]
 [ext_resource type="Texture2D" uid="uid://p7tptc3rlc6x" path="res://assets/sprites/weapon/weapons.png" id="2_ql8nu"]
