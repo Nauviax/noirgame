@@ -28,7 +28,6 @@ size = Vector2(151.14, 282.987)
 sprite_frames = SubResource("SpriteFrames_6tonr")
 
 [node name="SpeechBubble" parent="." index="1"]
-visible = true
 scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
