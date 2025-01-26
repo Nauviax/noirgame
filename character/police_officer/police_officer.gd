@@ -35,11 +35,14 @@ func _on_accusation_weapon_selected(option: String) -> void:
 func _on_accusation_location_selected(option: String) -> void:
 	_selected_location = option
 	
-	if _selected_culprit == "Alison" and _selected_weapon == "Bubble Blower" and _selected_location == "Garden":
+	if _selected_culprit == "Cory" and _selected_weapon == "Poison" and _selected_location == "Garden":
+		# Exactly correct.
 		_final_verdict_ui.set_verdict(2)
-	elif _selected_culprit in ["Alison", "Cory", "Jeffory", "Gordon"]: # TODO Select all the correct ones
+	elif _selected_culprit == "Alison" or (_selected_culprit == "Simon" and _selected_weapon == "Poison") or _selected_culprit == "Sarah" or (_selected_culprit == "Gordon" and _selected_weapon == "Sword") or (_selected_culprit == "Alvin" and _selected_weapon == "Dagger") or (_selected_culprit == "Jeffery" and _selected_weapon == "Tyre"):
+		# Beleivable story, but wrong character.
 		_final_verdict_ui.set_verdict(1)
 	else:
+		# Fail, either completely wrong, or slightly wrong.
 		_final_verdict_ui.set_verdict(0)
 	
 	_final_verdict_ui.visible = true

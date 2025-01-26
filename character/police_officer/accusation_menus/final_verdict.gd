@@ -10,7 +10,7 @@ signal closed()
 @export var _mislead_background : Texture2D
 @export var _good_background: Texture2D
 
-
+## 0 = Fail, 1 = Mislead, 2 = Good
 func set_verdict(verdict: int):
 	if verdict == 0:
 		texture = _fail_background

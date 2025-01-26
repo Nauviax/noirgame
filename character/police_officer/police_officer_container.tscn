@@ -78,7 +78,7 @@ optionTextures = Array[Texture2D]([ExtResource("3_i2w8b"), ExtResource("4_3mchr"
 
 [node name="WeaponAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
 visible = false
-optionTexts = Array[String](["Dagger", "Tyre", "Bubble", "Sword", "Screwdriver"])
+optionTexts = Array[String](["Dagger", "Tyre", "Poison", "Sword", "Screwdriver"])
 optionTextures = Array[Texture2D]([SubResource("AtlasTexture_dpkye"), SubResource("AtlasTexture_v6df3"), SubResource("AtlasTexture_ncj6p"), SubResource("AtlasTexture_6rby6"), SubResource("AtlasTexture_3w4cs")])
 
 [node name="LocationAccusationMenu" parent="." instance=ExtResource("1_fw6p8")]
