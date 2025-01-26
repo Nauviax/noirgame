@@ -40,23 +40,25 @@ sprite_frames = SubResource("SpriteFrames_wlvft")
 scale = Vector2(0.68, 0.68)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -485.294
-offset_top = -558.824
-offset_right = -215.294
-offset_bottom = -289.824
+offset_left = -529.0
+offset_top = -629.0
+offset_right = -215.0
+offset_bottom = -289.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -434.0
-offset_top = -516.0
+offset_left = -478.0
+offset_top = -559.0
 offset_right = -246.0
 offset_bottom = -366.0
+theme_override_font_sizes/font_size = 14
 text = "Gordon talking"
+label_settings = null
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -488.235
-offset_top = -597.059
-offset_right = -325.235
-offset_bottom = -538.059
+offset_left = -513.235
+offset_top = -661.765
+offset_right = -350.235
+offset_bottom = -602.765
 texture = SubResource("AtlasTexture_60ell")
 
 [node name="ThoughtBubble" parent="." index="2"]
@@ -69,10 +71,10 @@ offset_right = 365.634
 offset_bottom = -235.746
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 80.0
-offset_top = -504.0
-offset_right = 323.0
-offset_bottom = -418.0
+offset_left = 77.4648
+offset_top = -484.507
+offset_right = 320.465
+offset_bottom = -398.507
 text = "Gordon thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]

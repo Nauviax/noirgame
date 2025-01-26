@@ -36,39 +36,41 @@ sprite_frames = SubResource("SpriteFrames_fptk5")
 scale = Vector2(0.74, 0.74)
 
 [node name="TextureRect" parent="SpeechBubble" index="0"]
-offset_left = -449.432
-offset_top = -525.676
-offset_right = -206.432
-offset_bottom = -295.676
+offset_left = -484.0
+offset_top = -603.0
+offset_right = -154.0
+offset_bottom = -276.0
 
 [node name="Label" parent="SpeechBubble" index="1"]
-offset_left = -407.0
-offset_top = -497.0
-offset_right = -226.0
-offset_bottom = -353.0
+offset_left = -427.0
+offset_top = -557.0
+offset_right = -173.0
+offset_bottom = -349.0
+theme_override_font_sizes/font_size = 14
 text = "Jeffory talking"
+label_settings = null
 
 [node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -482.432
-offset_top = -575.676
-offset_right = -319.432
-offset_bottom = -513.676
+offset_left = -474.324
+offset_top = -628.378
+offset_right = -311.324
+offset_bottom = -566.378
 texture = SubResource("AtlasTexture_mdq2t")
 
 [node name="ThoughtBubble" parent="." index="2"]
 scale = Vector2(0.72, 0.72)
 
 [node name="TextureRect" parent="ThoughtBubble" index="0"]
-offset_left = 8.33334
-offset_top = -587.5
-offset_right = 368.333
-offset_bottom = -265.5
+offset_left = -28.0
+offset_top = -583.0
+offset_right = 314.0
+offset_bottom = -269.0
 
 [node name="Label" parent="ThoughtBubble" index="1"]
-offset_left = 72.0
-offset_top = -533.0
-offset_right = 331.0
-offset_bottom = -442.0
+offset_left = 33.3333
+offset_top = -506.944
+offset_right = 292.333
+offset_bottom = -415.944
 text = "Jeffory thinking"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
