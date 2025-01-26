@@ -23,10 +23,10 @@ scale = Vector2(0.6, 0.6)
 [node name="ThoughtBubble" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -40.0
-offset_top = -140.0
-offset_right = -40.0
-offset_bottom = -140.0
+offset_left = -35.0
+offset_top = -99.0
+offset_right = -35.0
+offset_bottom = -99.0
 
 [node name="TextureRect" type="TextureRect" parent="ThoughtBubble"]
 layout_mode = 0

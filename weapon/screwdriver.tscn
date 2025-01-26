@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ylei"]
 size = Vector2(179.05, 29)
 
-[node name="BaseWeapon" instance=ExtResource("1_c2ewx")]
+[node name="Screwdriver" instance=ExtResource("1_c2ewx")]
 
 [node name="WeaponSprite" parent="." index="0"]
 scale = Vector2(0.17, 0.17)

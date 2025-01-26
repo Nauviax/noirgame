@@ -5,13 +5,15 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bscw6"]
 
-[node name="BaseWeapon" instance=ExtResource("1_omka8")]
+[node name="Dagger" instance=ExtResource("1_omka8")]
 
 [node name="WeaponSprite" parent="." index="0"]
+rotation = -3.12575
+scale = Vector2(0.251253, 0.299469)
 texture = ExtResource("2_b3vuc")
 region_enabled = true
 region_rect = Rect2(101.088, 98.948, 665.221, 137.296)
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
-scale = Vector2(19.76, 3.36)
+scale = Vector2(8.32433, 1.6911)
 shape = SubResource("RectangleShape2D_bscw6")

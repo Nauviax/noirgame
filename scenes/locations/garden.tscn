@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bw1vmk18auxqg"]
+[gd_scene load_steps=9 format=3 uid="uid://bw1vmk18auxqg"]
 
 [ext_resource type="PackedScene" uid="uid://btm57ihbnbuo6" path="res://scenes/locations/base_location.tscn" id="1_nbo21"]
 [ext_resource type="Texture2D" uid="uid://ddmyn36w8a0t6" path="res://assets/sprites/backgrounds/garden.png" id="3_o8t5m"]
 [ext_resource type="PackedScene" uid="uid://b2qr85pw3em34" path="res://character/kimberly.tscn" id="4_glg1b"]
 [ext_resource type="PackedScene" uid="uid://bcuaiorejkaob" path="res://character/simon.tscn" id="5_6kwjo"]
 [ext_resource type="PackedScene" uid="uid://daddowoivp8ac" path="res://character/barbra.tscn" id="6_s6q2u"]
+[ext_resource type="PackedScene" uid="uid://b7dg575olj4f7" path="res://weapon/tyre.tscn" id="7_bmub4"]
 [ext_resource type="PackedScene" uid="uid://e2hoc7aqbul6" path="res://character/sarah.tscn" id="7_tskl2"]
+[ext_resource type="PackedScene" uid="uid://cddswvwwhgogd" path="res://weapon/bubble.tscn" id="8_pxj38"]
 
 [node name="BaseLocation2" instance=ExtResource("1_nbo21")]
 location_name = "Garden"
@@ -31,3 +33,9 @@ scale = Vector2(1.4, 1.4)
 [node name="Sarah" parent="Characters" index="3" instance=ExtResource("7_tskl2")]
 position = Vector2(1668, 750)
 scale = Vector2(1.83, 1.83)
+
+[node name="BaseWeapon" parent="." index="3" instance=ExtResource("7_bmub4")]
+position = Vector2(513, 978)
+
+[node name="BaseWeapon2" parent="." index="4" instance=ExtResource("8_pxj38")]
+position = Vector2(957, 458)
