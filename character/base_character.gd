@@ -1,13 +1,16 @@
 extends Node2D
 
 @onready var speech_bubble = $SpeechBubble
+@onready var speech_bubble_label = $SpeechBubble/Label
 @onready var thought_bubble = $ThoughtBubble
 @onready var thought_bubble_label = $ThoughtBubble/Label
 @onready var thought_bubble_timer = $ThoughtBubbleTimer
 @onready var click_area = $ClickArea
 @onready var animation_player = $AnimationPlayer
 
-@export var thought_dialogs: Array[String] = ["thought1", "thought2"]
+## First line is the speech dialog, the rest are thought dialogs. Two new lines seperate each dialog.
+@export_multiline var all_lines: String = "speech1\n\nthought1\n\nthought2"
+var thought_dialogs: Array[String]
 
 var current_dialog_index = 0
 var thought_dialogs_length: int
@@ -17,13 +20,17 @@ func _ready():
 	# Randomize a delay between 0 and 5 seconds
 	var random_delay = randf_range(2, 5)
 	thought_bubble_timer.start(random_delay)
+
+	## Split the string into an array of strings
+	thought_dialogs.assign(all_lines.split("\n\n"))
+	speech_bubble_label.text = thought_dialogs.pop_front() # First element is the speech dialog
 	
 	thought_bubble.modulate = Color(1, 1, 1, 0)
 	thought_dialogs_length = len(thought_dialogs)
 	if (thought_dialogs_length > 0):
 		thought_bubble_label.text = thought_dialogs[current_dialog_index]
 		current_dialog_index += 1
-
+	
 func _on_click_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if !speech_bubble.visible and event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		thought_bubble.visible = false

@@ -23,6 +23,13 @@ region = Rect2(80.6377, 186.886, 120.948, 58.0436)
 size = Vector2(151, 355)
 
 [node name="Cory" instance=ExtResource("1_ais4h")]
+all_lines = "I'm Alison's brother. Me and Jeremiah spent all day here in the lounge so I'm not sure what to say about the murder really. I guess Alison will be happy that that creep can't flirt with her anymore.
+
+Simon is pretty shady, but his goods work well. I wonder if he has anything weaker for rat problems.
+
+I'm glad Alison went out to meet with Sarah earlier today, she would've freaked out if she was alone.
+
+Kimberly should keep her stuff more secure, I'll have to give back her lab key later. I'll probably hand it to Gordon, because he's always finding and returning lost things around here."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_2jv7c")

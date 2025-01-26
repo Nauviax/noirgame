@@ -23,7 +23,13 @@ region = Rect2(85.5457, 0.483803, 116.762, 53.1469)
 size = Vector2(136, 284)
 
 [node name="Sarah" instance=ExtResource("1_s37f2")]
-thought_dialogs = Array[String](["Alison thinking 1", "Alison thinking 2"])
+all_lines = "I'm Stephen's daughter. I'm set to inherit the mansion now that he's dead, but I'm not sure if I still want it after tonight. Perhaps Alison could help with selling the place, she's a good friend. The murder? I still don't think it was murder, noone here would want to actually murder my dad. Alison never liked him but she wouldn't kill him for flirting with her. Are you sure it wasn't just an accident?
+
+I'm surprised Alison was willing to help. For a while, I thought she hated me as well as my dad.
+
+I don't understand what went wrong with the latest batch of bubble mix. The last batch was perfect, and last night's batch didn't have any changes. The only person with access to my lab is Kimberly, but she doesn't ever go near my equipment.
+
+I need to start working out more, this morning made that clear. Alvin seemed willing to help, though I'm not sure about his methods. Better than having to throw tyres around though."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ubf54")

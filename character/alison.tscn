@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bm3c0ll6rem8i"]
+[gd_scene load_steps=6 format=3 uid="uid://bm3c0ll6rem8i"]
 
 [ext_resource type="PackedScene" uid="uid://casoypfdm7e3l" path="res://character/base_character.tscn" id="1_t2oms"]
 [ext_resource type="Texture2D" uid="uid://b6skgu8rcnkdu" path="res://assets/sprites/character/alison.png" id="2_75wlj"]
-[ext_resource type="Texture2D" uid="uid://c8d6s5encxpw2" path="res://assets/sprites/character/nametag/alisonNameTag.png" id="3_5qlbw"]
+[ext_resource type="Texture2D" uid="uid://g23fwqk88i80" path="res://assets/textures/temp/speech-bubble.png" id="3_6lyd7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pl3jf"]
 animations = [{
@@ -15,14 +15,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1wptc"]
-atlas = ExtResource("3_5qlbw")
-region = Rect2(200.7, 2.22598, 127.552, 52.2611)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2wy"]
 size = Vector2(170, 284)
 
 [node name="Alison" instance=ExtResource("1_t2oms")]
+all_lines = "Stephen was a creep. I'm not saying he deserved to be murdered, but I won't miss him. Is that bad? That's probably bad to say. You're not a real cop though right? Well anyway, it can't have been me because I've been in the lounge all day. Stephen never came in here.
+
+How did she even do it? Why did she do it? Unless she didn't, and she just happened to be there?
+
+What would she have done if Cory hadn't asked me to go past the garden? Left it there?
+
+Simon must be in on it. He must've told Cory to send me out to the garden. I need to tell Cory to stop talking to that prick."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.999985, -1.00002)
@@ -49,13 +52,6 @@ offset_right = 251.571
 offset_bottom = -392.286
 text = "I am talking"
 
-[node name="NameTag" parent="SpeechBubble" index="2"]
-offset_left = -41.4286
-offset_top = -534.286
-offset_right = 85.5714
-offset_bottom = -482.286
-texture = SubResource("AtlasTexture_1wptc")
-
 [node name="ThoughtBubble" parent="." index="2"]
 scale = Vector2(0.69, 0.69)
 
@@ -70,7 +66,30 @@ offset_left = 131.478
 offset_top = -466.116
 offset_right = 409.478
 offset_bottom = -419.116
+text = "This is a thought bubble"
 
 [node name="CollisionShape2D" parent="ClickArea" index="0"]
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_2k2wy")
+
+[node name="ThoughtBubbleTimer" parent="." index="4"]
+autostart = true
+
+[node name="NamePanel" type="Control" parent="." index="5"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="NamePanel" index="0"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_6lyd7")
+
+[node name="Label" type="Label" parent="NamePanel" index="1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Name"

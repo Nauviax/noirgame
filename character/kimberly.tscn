@@ -23,6 +23,11 @@ region = Rect2(61.9996, 59.2498, 163, 52.5)
 size = Vector2(131, 333)
 
 [node name="Kimberly" instance=ExtResource("1_hp3v8")]
+all_lines = "I saw Sarah and Alison fretting about something earlier when I was looking for something I lost earlier today. No clue what they were talking about. If I talked to them then Sarah might find out I lost another of her spare lab keys.
+
+Sarah finished her latest batch of bubble mix last night, and I saw her bring it out of the lab today. She was going to put on a demo for her dad, but maybe she was showing them to Alison first? Or perhaps they were just waiting for Stephen to show, and he never did.
+
+I've checked everywhere, but I still haven't found the key. Maybe Gordon already found it since I last asked him? I swear I just left it in the lounge but it's clearly not there."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_qwsjg")

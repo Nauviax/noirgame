@@ -23,6 +23,11 @@ region = Rect2(224.616, 62.4591, 138.182, 50.4895)
 size = Vector2(170, 284)
 
 [node name="Barbra" instance=ExtResource("1_nifmo")]
+all_lines = "I didn't see anything, I've been sleeping in the hammock all day. I was supposed to be building something out back, but I lost my only screwdriver in the grass again. The murder? I wouldn't know, ask the victim's daughter maybe. They were pretty close.
+
+Gordon keeps finding my tools. How am I supposed to slack off if he keeps finding the stuff I hide?
+
+Stephen and his daughter were supposed to be testing their new bubble formula today. I guess that never happened?"
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_kr6wo")

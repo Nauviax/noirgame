@@ -23,6 +23,11 @@ region = Rect2(82.4997, 122.25, 120.5, 53.5)
 size = Vector2(170, 302)
 
 [node name="Lisa" instance=ExtResource("1_vnq7a")]
+all_lines = "Alvin gave me his sword, but Gordon took it off me when I tried to swing it around earlier. Please don't tell Alvin I lost it, he thinks I've just hidden it somewhere for now.
+
+Alison and Sarah were making a mess in the hallway earlier, tracking mud through the building. Gordon got mad, but he doesn't know who made the mess yet. I'll tell him when he gives my sword back.
+
+Alvin gave me one of his daggers while he was dancing earlier. I need to tell him to stop throwing them at me though, even if he is a good throw."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_6ehvb")

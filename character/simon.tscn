@@ -23,6 +23,13 @@ region = Rect2(82.7293, 309.149, 120.788, 53.1469)
 size = Vector2(151.14, 282.987)
 
 [node name="Simon" instance=ExtResource("1_xeokm")]
+all_lines = "I'm not actually supposed to be at the party still, but I've been caught up in this drama before I could leave. I was just making a delivery for a friend. The murder? Never actually met Stephen, so I never had anything against the guy.
+
+Can't let the copper know I was dealing drugs here. Drugs and poison. Who boy... I wonder if I can sneak out the back before someone decides I had something to do with the murder.
+
+Calm down Simon, you didn't do anything. Just don't try to sell drugs to the copper and you'll be fine.
+
+I wonder if I can convince Cory to buy the rest of my normal stock before I leave."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_6tonr")

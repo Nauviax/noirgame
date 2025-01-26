@@ -23,6 +23,11 @@ region = Rect2(206.739, 118.304, 119.178, 56.3679)
 size = Vector2(123, 337)
 
 [node name="Susan" instance=ExtResource("1_5robl")]
+all_lines = "Jeffery and Alvin were fighting again yesterday. For sport, of course. Jeffery throws tyres at Alvin, who tries to deflect them with his sword while dancing. It's ridiculous to watch really, because neither are particularly good at it. The murder? I'd wager it was one of those fools accidentally knocking out poor Stephen.
+
+Alvin gave his sword to Lisa when we came in today, but I'm pretty sure he still has like four daggers on his person. He spun around earlier and threw one at Lisa, saying \"Catch darling!\". A dagger! Insane.
+
+Gordon said the body didn't have any visible marks or cuts. Alvin probably would've thrown a dagger if he did the crime, but I could see Jeffery accidentally throwing a tyre at him, the oaf."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_6cs3t")

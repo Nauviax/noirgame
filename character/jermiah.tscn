@@ -23,6 +23,13 @@ region = Rect2(200.297, 246.339, 168.298, 53.9521)
 size = Vector2(117, 366)
 
 [node name="Jermiah" instance=ExtResource("1_bjg4x")]
+all_lines = "Me and Cory have been here all day. Well mostly anyway. Simon came by to drop off more party snacks, but I guess Cory got the good stuff this time because he left to put it in his room or car or something rather than sharing it. The murder? Alison was out around the time, but she's my sweetheart and wouldn't hurt a soul. Even if Stephen was trying to win her over a bit too hard.
+
+Honestly, I'm somewhat happy Stephen is gone. He was always trying to steal my girl.
+
+Everyone in the ballroom is a freak. Weaponised dancing? I bet someone there is responsible for the murder. Freaks.
+
+I should find Simon before he leaves again. Though I guess he won't be dealing while the detective is here. I hope this gets wrapped up soon."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_blqtr")

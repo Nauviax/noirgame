@@ -23,6 +23,15 @@ region = Rect2(212, 306, 139.5, 52.5)
 size = Vector2(150, 307)
 
 [node name="Gordon" instance=ExtResource("1_f82w1")]
+all_lines = "I'm the butler, and I'm normally the one who cleans up around here. I was the one who reported the murder of Stephen; Someone had dragged the body down into the boiler room and tried stuffing it into the boiler. Clearly they weren't strong enough to lift it over, because they gave up half way.
+
+I've still got to clean up the rest of the mud that got tracked through the house. Still don't know who's responsible for that mess.
+
+Simon delivered another package to Cory today, he isn't as stealthy as he thinks. It's probably just more drugs, so I'll have to go confiscate them later.
+
+Kimberly lost her lab key again. I haven't found it yet. Of course, Sarah will probably forgive her for losing it again anyway, but it's becoming a security concern for Sarah's science lab.
+
+Lisa had a SWORD with her in the ballroom today! Where did she even get that? I've left it in the boiler room for now, she can get it back when she leaves."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_wlvft")

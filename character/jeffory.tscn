@@ -23,6 +23,11 @@ region = Rect2(58.4996, 245.75, 147, 49.5)
 size = Vector2(147, 359)
 
 [node name="Jeffory" instance=ExtResource("1_d62y4")]
+all_lines = "Alvin is too hung up on weapons. Weaponised ballroom dancing? I don't need a sword when I'm strong enough to JUGGLE Alvin if I wanted. Oh the murder? I'd probably throw one of those workout tyres you can find out back, knock him right out. It's not really a weapon, so they'd never find the murder weapon. Oh that's not what you were asking?
+
+Sarah spoke to Alvin about strength training? ALVIN? If she wants to get stronger, she should've talked to me!
+
+One day, I WILL make tyre throwing into an officially recognised sport."
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_fptk5")
